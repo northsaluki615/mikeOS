@@ -101,9 +101,21 @@ module.exports = function(eleventyConfig) {
 	})
 
 	// Mike's additions
-	module.exports = (eleventyConfig) => {
-		eleventyConfig.addPlugin(eleventyPluginIndieWeb);
-	  };
+	eleventyConfig.addPlugin(eleventyPluginIndieWeb, {
+		hCard: {
+		  name: "Michael Helmers",
+		  url: "https://mike.helmers.me",
+		  photo: "https://yourwebsite.com/photo.jpg",
+		  role: "Infosec",
+		  email: "mikehelmers@proton.me",
+		  telephone: "+16189672089",
+		  address: {
+			locality: "Madison",
+			region: "Wisconsin",
+			countryName: "United States"
+		  }
+		}
+	  });
 
 
 	// Features to make your build faster (when you need them)
