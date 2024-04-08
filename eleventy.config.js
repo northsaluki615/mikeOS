@@ -103,17 +103,17 @@ module.exports = function(eleventyConfig) {
 	// Mike's additions
 	eleventyConfig.addPlugin(eleventyPluginIndieWeb, {
 		hCard: {
-		  name: "Michael Helmers",
-		  url: "https://mike.helmers.me",
-		  photo: "https://yourwebsite.com/photo.jpg",
-		  role: "Infosec",
-		  email: "mikehelmers@proton.me",
-		  telephone: "+16189672089",
-		  address: {
-			locality: "Madison",
-			region: "Wisconsin",
-			countryName: "United States"
-		  }
+			name: "Michael Helmers",
+			url: "https://mike.helmers.me",
+			photo: "https://yourwebsite.com/photo.jpg", // Replace with your actual photo URL
+			role: "Infosec",
+			email: "mikehelmers@proton.me",
+			tel: "+16189672089", // Use 'tel' property for telephone
+			adr: {
+			  locality: "Madison",
+			  region: "Wisconsin",
+			  countryName: "United States"
+			}
 		}
 	  });
 
