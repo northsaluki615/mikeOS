@@ -119,6 +119,8 @@ module.exports = function(eleventyConfig) {
 		username: 'mike',
 		displayName: 'Michael Helmers',
 		summary: 'This is my Eleventy website, now discoverable on the Fediverse!',
+		outbox: true,
+		outboxCollection: 'posts'
 	  });
 
 	// Features to make your build faster (when you need them)
