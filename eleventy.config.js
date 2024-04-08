@@ -12,6 +12,7 @@ const pluginImages = require("./eleventy.config.images.js");
 
 // Added for mikeOS
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
+const activityPubPlugin = require('eleventy-plugin-activity-pub');
 
 
 module.exports = function(eleventyConfig) {
@@ -105,10 +106,7 @@ module.exports = function(eleventyConfig) {
 		hCard: {
 			name: "Michael Helmers",
 			url: "https://mike.helmers.me",
-			photo: "https://yourwebsite.com/photo.jpg", // Replace with your actual photo URL
-			role: "Infosec",
 			email: "mikehelmers@proton.me",
-			tel: "+16189672089", // Use 'tel' property for telephone
 			adr: {
 			  locality: "Madison",
 			  region: "Wisconsin",
@@ -116,7 +114,12 @@ module.exports = function(eleventyConfig) {
 			}
 		}
 	  });
-
+	eleventyConfig.addPlugin(activityPubPlugin, {
+		domain: 'mike.helmers.me',
+		username: 'mike',
+		displayName: 'Michael Helmers',
+		summary: 'This is my Eleventy website, now discoverable on the Fediverse!',
+	  });
 
 	// Features to make your build faster (when you need them)
 
