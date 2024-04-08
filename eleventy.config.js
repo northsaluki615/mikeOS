@@ -11,7 +11,7 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
 // Added for mikeOS
-
+const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 
 
 module.exports = function(eleventyConfig) {
@@ -101,6 +101,9 @@ module.exports = function(eleventyConfig) {
 	})
 
 	// Mike's additions
+	module.exports = (eleventyConfig) => {
+		eleventyConfig.addPlugin(eleventyPluginIndieWeb);
+	  };
 
 
 	// Features to make your build faster (when you need them)

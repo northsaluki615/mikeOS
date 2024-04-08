@@ -42,6 +42,6 @@
 		"markdown-it-anchor": "^8.6.7"
 	},
 	"dependencies": {
-		"eleventy-plugin-backlinks": "^0.2.1"
+		"eleventy-plugin-indieweb": "^0.0.1"
 	}
 }
