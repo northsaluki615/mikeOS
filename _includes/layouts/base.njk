@@ -53,7 +53,14 @@
 		<main id="skip">
 			{{ content | safe }}
 		</main>
-		{% hCard %}
+		{% if hCard %}
+		<div class="h-card">
+			<h2 class="p-name">{{ hCard.name }}</h2>
+			<p class="p-role">{{ hCard.role }}</p>
+			<p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
+		</div>
+		{% endif %}
+
 		<footer>
 			<ul>
 			<li><a href="https://github.com/northsaluki615" rel="me">@northsaluki615 on Github</a></li>
