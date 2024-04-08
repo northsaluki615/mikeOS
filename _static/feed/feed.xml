@@ -4,21 +4,12 @@
 	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
 	<link href="https://example.com/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2023-01-23T00:00:00Z</updated>
+	<updated>2018-09-30T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Your Name Here</name>
 		<email>youremailaddress@example.com</email>
 	</author>
-	
-	<entry>
-		<title>This is a fifth post (draft)</title>
-		<link href="https://example.com/blog/fifthpost/"/>
-		<updated>2023-01-23T00:00:00Z</updated>
-		<id>https://example.com/blog/fifthpost/</id>
-		<content type="html">&lt;p&gt;This is a draft post&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>This is my fourth post!</title>

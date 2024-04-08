@@ -11,14 +11,6 @@
 	},
 	"items": [
 		{
-			"id": "https://example.com/blog/fifthpost/",
-			"url": "https://example.com/blog/fifthpost/",
-			"title": "This is a fifth post (draft)",
-			"content_html": "<p>This is a draft post</p>\n",
-			"date_published": "2023-01-23T00:00:00Z"
-		}
-		,
-		{
 			"id": "https://example.com/blog/fourthpost/",
 			"url": "https://example.com/blog/fourthpost/",
 			"title": "This is my fourth post!",
