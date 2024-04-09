@@ -268,3 +268,20 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+/* Grid */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+  }
+  
+  .grid-item {
+	padding: 20px;
+	border: 1px solid #ccc;
+  }
+  
+  .grid-item h2 {
+	margin-top: 0;
+  }
+  

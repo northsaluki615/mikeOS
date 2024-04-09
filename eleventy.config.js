@@ -14,6 +14,8 @@ const pluginImages = require("./eleventy.config.images.js");
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
 const pluginInlineLinkFavicon = require("eleventy-plugin-inline-link-favicon")
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -124,6 +126,35 @@ module.exports = function(eleventyConfig) {
 	  });
 	eleventyConfig.addPassthroughCopy("images");
 	eleventyConfig.addPlugin(pluginInlineLinkFavicon)
+	// create a collection of all wiki tags
+	eleventyConfig.addCollection("wikiTags", function(collectionApi) {
+		let tagSet = new Set();
+		collectionApi.getFilteredByGlob("./content/wiki/*.md").forEach(item => {
+		  if("tags" in item.data) {
+			let tags = item.data.tags;
+			tags.forEach(tag => tagSet.add(tag));
+		  }
+		});
+		return [...tagSet];
+	  });
+	eleventyConfig.addFilter("filterPostsByTag", function(posts, tag) {
+		return posts.filter(post => post.data.tags && post.data.tags.includes(tag)).slice(0, 3);
+	  });
+	// Dynamically add collections based on subdirectories of /content/wiki/
+	const wikiDir = 'content/wiki/';
+	fs.readdirSync(wikiDir, { withFileTypes: true }).forEach(dir => {
+		if (dir.isDirectory()) {
+			const dirName = dir.name;
+			eleventyConfig.addCollection(dirName, function(collectionApi) {
+				return collectionApi.getFilteredByGlob(path.join(wikiDir, dirName, "*.md"));
+			});
+		}
+		});
+	eleventyConfig.addCollection("wikiTopics", function(collectionApi) {
+		// Assuming your wiki collections have a specific naming pattern or are manually listed
+		return ['linux', 'cybersecurity', 'anotherTopic']; // Manually list your wiki topics or determine them dynamically
+	  });
+		  
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
