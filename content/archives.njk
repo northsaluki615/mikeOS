@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Archive
+  order: 2
+---
+<h1>Mike's Older Posts</h1>
+
+These are all the posts I've written, sorted by date. They're from my old blog, which I've now archived. I'm not updating these posts anymore, but I hope you find them interesting. At least in a historical sense.
+
+{% set postslist = collections.archives %}
+{% include "postslist.njk" %}
