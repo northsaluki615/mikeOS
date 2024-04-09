@@ -35,7 +35,7 @@
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-img": "^3.1.1",
 		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-bundle": "^1.0.4",
+		"@11ty/eleventy-plugin-bundle": "github:11ty/eleventy-plugin-bundle",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"eleventy-plugin-webmentions": "^2.1.0",
@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"eleventy-plugin-activity-pub": "^0.1.1",
-		"eleventy-plugin-indieweb": "^0.0.1"
+		"eleventy-plugin-indieweb": "^0.0.1",
+		"eleventy-plugin-inline-link-favicon": "^1.1.0"
 	}
 }

@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+I'm a father, brewer, hacker, and sometimes minister living in Madison, WI. I'm a nerd who likes to ruminate. Lets go.

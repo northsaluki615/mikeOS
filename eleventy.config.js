@@ -13,7 +13,7 @@ const pluginImages = require("./eleventy.config.images.js");
 // Added for mikeOS
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
-
+const pluginInlineLinkFavicon = require("eleventy-plugin-inline-link-favicon")
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -122,6 +122,8 @@ module.exports = function(eleventyConfig) {
 		outbox: true,
 		outboxCollection: 'posts'
 	  });
+	eleventyConfig.addPassthroughCopy("images");
+	eleventyConfig.addPlugin(pluginInlineLinkFavicon)
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
