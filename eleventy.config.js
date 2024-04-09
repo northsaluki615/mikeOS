@@ -162,6 +162,34 @@ module.exports = function(eleventyConfig) {
 		}
 		return topics;
 	  });
+	eleventyConfig.addCollection("allTags", function(collectionApi) {
+		let tagSet = new Set();
+		collectionApi.getAll().forEach(item => {
+		  if("tags" in item.data) {
+			let tags = item.data.tags;
+			tags.forEach(tag => tagSet.add(tag));
+		  }
+		});
+		return [...tagSet];
+	  });
+	eleventyConfig.addFilter("filterByTag", (collection, tagName) => {
+		return collection.filter(item => {
+		  return (item.data.tags || []).includes(tagName);
+		});
+	  });
+	eleventyConfig.addPairedShortcode("css", function(content) {
+		return `<style>${content}</style>`;
+	  });
+	  
+	  
+
+	// -----------------------------------------------------------------
+	// Debugging
+	eleventyConfig.on('afterBuild', () => {
+		const linuxPosts = eleventyConfig.collections.linux;
+		console.log('Linux Posts:', linuxPosts);
+	  });
+	  
 		  
 	// Features to make your build faster (when you need them)
 

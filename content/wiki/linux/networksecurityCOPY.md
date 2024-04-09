@@ -3,7 +3,7 @@ title: Network Security COPY
 date: 2024-04-12
 author: Michael Helmers
 tags:
-
+  - linux
 description: An overview of network security and its importance in cybersecurity.
 thumbnail: /path/to/network-security-thumbnail.jpg
 related_articles:

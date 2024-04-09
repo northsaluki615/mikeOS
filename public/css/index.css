@@ -284,4 +284,31 @@ h2 + .header-anchor {
   .grid-item h2 {
 	margin-top: 0;
   }
-  
+
+/* Custom CSS for tags*/
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust space between posts */
+}
+
+.post-item {
+    border: 1px solid #ddd; /* Light border around each post */
+    padding: 15px;
+    border-radius: 8px; /* Slightly rounded corners for aesthetics */
+}
+
+.post-item h2 {
+    margin: 0 0 10px 0; /* Adjust title margin */
+    font-size: 1.25rem; /* Larger font size for post titles */
+}
+
+.post-item h2 a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark text for better readability */
+}
+
+.post-item .post-meta {
+    font-style: italic;
+    color: #666; /* Lighter text for meta information */
+}
