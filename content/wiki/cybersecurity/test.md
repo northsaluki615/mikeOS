@@ -3,7 +3,8 @@ title: Introduction to Cybersecurity
 date: 2024-04-10
 author: Michael Helmers
 tags:
-
+    - linux
+    - raspberrypi
 description: An overview of the fundamental concepts of cybersecurity.
 ---
 # Here is the introduction to Cybersecurity

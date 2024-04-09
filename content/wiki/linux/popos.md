@@ -2,8 +2,11 @@
 title: pop!OS
 date: 2024-04-03
 author: Michael Helmers
-tags:
-
+tags: 
+    - ubuntu
+    - linux
+    - popos
+    - raspberrypi
 ---
 
 # Pop!_OS

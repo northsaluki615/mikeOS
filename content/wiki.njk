@@ -14,9 +14,9 @@ numberOfLatestPostsToShow: 3
 
 <!-- Assuming this is in wiki.njk or a similar template -->
 <div class="grid-container">
-  {% for topic in collections.wikiTopics %} {# wikiTopics needs to be defined or passed to the template #}
+  {% for topic in collections.wikiTopics %}
     <div class="grid-item">
-      <h2>{{ topic | capitalize }}</h2>
+      <h2>{{ topic | capitalize }} </h2>
       <ul>
         {% for item in collections[topic] %}
           <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
@@ -25,4 +25,3 @@ numberOfLatestPostsToShow: 3
     </div>
   {% endfor %}
 </div>
-

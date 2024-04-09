@@ -150,9 +150,17 @@ module.exports = function(eleventyConfig) {
 			});
 		}
 		});
+
 	eleventyConfig.addCollection("wikiTopics", function(collectionApi) {
-		// Assuming your wiki collections have a specific naming pattern or are manually listed
-		return ['linux', 'cybersecurity', 'anotherTopic']; // Manually list your wiki topics or determine them dynamically
+		let topics = [];
+		// Check if the wiki directory exists to prevent build errors
+		if (fs.existsSync(wikiDir)) {
+		  // Read the contents of the wiki directory
+		  const items = fs.readdirSync(wikiDir, { withFileTypes: true });
+		  // Filter for directories and get their names
+		  topics = items.filter(item => item.isDirectory()).map(dir => dir.name);
+		}
+		return topics;
 	  });
 		  
 	// Features to make your build faster (when you need them)
