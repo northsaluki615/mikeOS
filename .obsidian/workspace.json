@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "043ae69d1a579606",
+    "type": "split",
+    "children": [
+      {
+        "id": "b40d4c47d2f1d843",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f06532173187641",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f67c017d0cbe8fc7",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d3376886c5e85df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "85124d62ad55010b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0625377e7e7a845f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b6355b5c953e2349",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ecb0c23e02e2a889",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9a7fb2b8b73657e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4efbb0af2813058",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fd9d86fcbeb15648",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c40ba57d264a1c4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6215b9705963f5b3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "85124d62ad55010b",
+  "lastOpenFiles": [
+    "_static/wiki/🎮 Gaming/Dwarf Fortress/⛰️ Dwarf Fortress Tips/index.html",
+    "_static/wiki/🎮 Gaming/Dwarf Fortress/⛰️ Dwarf Fortress Tips",
+    "_static/wiki/🎮 Gaming/Dwarf Fortress",
+    "_static/css/prism-okaidia.css",
+    "_static/wiki/📱 Tech/omg.lol/index.html",
+    "_static/wiki/📱 Tech/IoT/index.html",
+    "_static/wiki/📱 Tech/EdgeRouter Lite/index.html",
+    "_static/wiki/📱 Tech/CHERRY MX BOARD 2.0S/index.html",
+    "_static/wiki/📱 Tech/omg.lol",
+    "_static/wiki/📱 Tech/IoT",
+    "_static/wiki/📱 Tech/EdgeRouter Lite",
+    "content/wiki/📱 Tech/IoT.md",
+    "content/wiki/📱 Tech/omg.lol.md",
+    "content/wiki/📱 Tech/EdgeRouter Lite.md",
+    "content/wiki/📱 Tech/CHERRY MX BOARD 2.0S.md",
+    "content/wiki/💻 self-hosted/kill-the-newsletter.md",
+    "content/wiki/💻 self-hosted/indieweb.md",
+    "content/wiki/💻 self-hosted/Pi-hole.md",
+    "content/wiki/💻 self-hosted/Immich.md",
+    "content/wiki/💻 self-hosted/Eleventy.md",
+    "content/wiki/🍲 Recipe/Grandma Lori's Porchetta.md",
+    "content/wiki/🧘‍♂️ Philosophy/How to Date.md",
+    "content/wiki/🧬 Life/🛏️ Bedtime for James.md",
+    "content/wiki/🧬 Life/🍃 My Digital Garden.md",
+    "content/wiki/🧬 Life/Exercise.md",
+    "content/wiki/🧑‍💻 hacking/pwnagotchi.md",
+    "content/wiki/🎮 Gaming/Dwarf Fortress/⛰️ Dwarf Fortress Tips.md",
+    "content/wiki/🎮 Gaming/Dwarf Fortress/FlowchartDF.png",
+    "content/wiki/🎮 Gaming/The Fall of Malevelon Creek.md",
+    "content/wiki/🎮 Gaming/Minecraft.md",
+    "content/wiki/🎮 Gaming/Linux Gaming.md",
+    "content/wiki/🎮 Gaming/Legend of Zelda BoTW.md",
+    "content/wiki/🎮 Gaming/Crafty.md",
+    "content/wiki/💼 Employment/Superpower your Job Search with AI Tools.md",
+    "content/wiki/🔘 App/Useful Apps.md",
+    "content/wiki/🔘 App/Newspaper App.md",
+    "content/wiki/🔘 App/Bad Neighbor App.md"
+  ]
+}

@@ -1,67 +1,22 @@
 ---
 layout: layouts/base.njk
 ---
+<div class="wiki-container">
+  <header class="wiki-header">
+    <h1>{{ title }}</h1>
+    <p class="meta">Last updated on {{ page.date | readableDate("MMMM dd, yyyy", "utc") }}</p>
+  </header>
 
-{# Only include the syntax highlighter CSS on blog posts #}
-{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
-{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-
-<article class="h-entry">
-  <h1 class="p-name">{{ title }}</h1>
-
-  <ul class="post-metadata">
-    <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-    {%- for tag in tags | filterTagList %}
-    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-    {%- endfor %}
-  </ul>
-
-  <div class="e-content">
+  <article class="wiki-content">
     {{ content | safe }}
-  </div>
+  </article>
 
-  <a class="u-url" href="{{ page.url }}">
-    Published <time class="dt-published">{{ page.date | htmlDateString }}</time>
-  </a>
-
-  <!-- Additional Wiki Article Information -->
-  <section class="wiki-information">
-    <h2>Overview</h2>
-    <p>This article provides an overview of the topic, including background information and key concepts.</p>
-
-    <h2>Content</h2>
-    <p>The article covers various aspects of the topic in detail, including subtopics, definitions, examples, and explanations.</p>
-
-    <h2>References</h2>
-    <ul>
-      <li><a href="#">Reference 1</a></li>
-      <li><a href="#">Reference 2</a></li>
-      <!-- Add more references as needed -->
-    </ul>
-
-    <h2>Related Articles</h2>
-    <ul>
-      <li><a href="#">Related Article 1</a></li>
-      <li><a href="#">Related Article 2</a></li>
-      <!-- Add more related articles as needed -->
-    </ul>
-
-    <h2>Revision History</h2>
-    <ul>
-      <li>Version 1.0 - Initial release ({{ page.date | readableDate }})</li>
-      <!-- Add more versions and changes as needed -->
-    </ul>
-  </section>
-</article>
-
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+  <footer class="wiki-footer">
+    <nav>
+      <ul class="wiki-links">
+        <li><a href="/wiki/">All Wiki Articles</a></li>
+        <li><a href="/tags/">Tags Index</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>

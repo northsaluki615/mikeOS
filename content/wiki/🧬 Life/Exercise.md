@@ -1,0 +1,7 @@
+# Exercise
+
+## Resistance Training
+
+
+## Weights
+

@@ -1,0 +1,45 @@
+/* wiki.css */
+.wiki-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .wiki-header h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  .meta {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .wiki-content {
+    margin-top: 20px;
+  }
+  
+  .wiki-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .wiki-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .wiki-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .wiki-links a {
+    text-decoration: none;
+    color: #0074d9;
+  }
+  
+  .wiki-links a:hover {
+    text-decoration: underline;
+  }
+  
