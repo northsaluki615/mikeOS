@@ -46,8 +46,21 @@ module.exports = function(eleventyConfig) {
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateStr, format = "dd LLLL yyyy", zone = "utc") => {
-		return DateTime.fromISO(dateStr, { zone }).toFormat(format);
+		// Attempt to parse the date string using fromISO for ISO 8601 formats
+		let parsedDate = DateTime.fromISO(dateStr, { zone });
+		// Fallback to fromJSDate if the initial parsing fails
+		if (!parsedDate.isValid) {
+			parsedDate = DateTime.fromJSDate(new Date(dateStr), { zone });
+		}
+		// Final check to ensure the date is valid before formatting
+		if (parsedDate.isValid) {
+			return parsedDate.toFormat(format);
+		} else {
+			console.error(`Invalid date string: ${dateStr}`);
+			return "Invalid Date";
+		}
 	});
+	
 
 	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -126,16 +139,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("images");
 	eleventyConfig.addPlugin(pluginInlineLinkFavicon)
 	// create a collection of all wiki tags
-	eleventyConfig.addCollection("wikiTags", function(collectionApi) {
-		let tagSet = new Set();
-		collectionApi.getFilteredByGlob("./content/wiki/*.md").forEach(item => {
-		  if("tags" in item.data) {
-			let tags = item.data.tags;
-			tags.forEach(tag => tagSet.add(tag));
-		  }
-		});
-		return [...tagSet];
-	  });
+
 	eleventyConfig.addFilter("filterPostsByTag", function(posts, tag) {
 		return posts.filter(post => post.data.tags && post.data.tags.includes(tag)).slice(0, 3);
 	  });
@@ -176,19 +180,11 @@ module.exports = function(eleventyConfig) {
 		  return (item.data.tags || []).includes(tagName);
 		});
 	  });
-	eleventyConfig.addPairedShortcode("css", function(content) {
-		return `<style>${content}</style>`;
-	  });
-	  
-	  
+
 
 	// -----------------------------------------------------------------
 	// Debugging
-	eleventyConfig.on('afterBuild', () => {
-		const linuxPosts = eleventyConfig.collections.linux;
-		console.log('Linux Posts:', linuxPosts);
-	  });
-	  
+
 		  
 	// Features to make your build faster (when you need them)
 

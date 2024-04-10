@@ -1,18 +1,29 @@
+---
+title: pwnagotchi
+date: 2024-03-10  # Date published
+updated: 2024-04-10  # Date last updated (optional)
+description: Build a Pwnagotchi with a Raspberry Pi Zero W and a Waveshare 2.13inch e-Paper HAT.
+tags:
+  - raspberrypi
+  - hacking
+  - linux
+---
 # pwnagotchi
 
-#wiki
+<https://pwnagotchi.ai>
 
-https://pwnagotchi.ai
 ## Install
+
 **To write your Pwnagotchi image with balenaEtcher:**
 
 - Download the latest **[Pwnagotchi .img file](https://github.com/evilsocket/pwnagotchi/releases).**
-    - Verify the SHA-256 checksum of the .img
+  - Verify the SHA-256 checksum of the .img
 - Download **[balenaEtcher](https://www.balena.io/etcher/)** and install it.
 - Connect an SD card reader with the SD card inside.
 - Open **balenaEtcher** and select from your hard drive the Raspberry Pi `.img` or `.zip` file you wish to write to the SD card.
 - Select the SD card you wish to write your image to.
 - Review your selections, then click `Flash!` to begin writing data to the SD card.
+
 ### config.toml
 
 **Location:** `/etc/pwnagotchi/config.toml`
@@ -43,11 +54,15 @@ ui.display.enabled = true
 ui.display.type = "waveshare_2"
 ui.display.color = "black"
 ```
+
 ### First SSH
+
 ````bash
 ssh pi@w3ndygotchi.local # default password: raspberry
 ````
- 
+
 ## Assembly
-### Solder GPIO Pins 
-https://stuartglover.com/?p=191
+
+### Solder GPIO Pins
+
+<https://stuartglover.com/?p=191>

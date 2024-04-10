@@ -1,24 +1,29 @@
 ---
 title: Pi-hole Setup and Configuration
-date: 2024-04-10
+date: 2024-02-10
+updated: 2024-04-08
 tags:
-  - selfhost
+  - self-hosted
   - wiki
   - networking
-  - security
+  - cybersecurity
   - Pi-hole
   - Wireguard
   - Pi.Alert
   - DNS
   - DHCP
+  - linux
 description: Comprehensive guide on setting up Pi-hole, configuring DHCP with EdgeRouter Lite, integrating Wireguard for secure VPN access, and monitoring with Pi.Alert.
-created-date:
 ---
-# Pi-hole Raspberry Pi
-### Software
-#### pi-hole
 
-##### Enable Conditional Forwarding on [[EdgeRouter Lite]]
+# Pi-hole Raspberry Pi
+
+## Software
+
+### pi-hole
+
+#### Enable Conditional Forwarding on [[EdgeRouter Lite]]
+
 1. Log in to CLI or SSH to Ubiquiti router.
 2. Type: `configure` and hit enter.
 3. Type: `set service dhcp-server hostfile-update enable` and hit enter.
@@ -27,13 +32,16 @@ created-date:
 6. End SSH or CLI window.
 
 This will now add names and IP of devices from your DHCP scope to the router's hosts file.
-#### Block lists
-- https://firebog.net/
+### Block lists
+
+- [https://firebog.net/](https://firebog.net/)
 - https://avoidthehack.com/best-pihole-blocklists
 - https://sefinek.net/blocklist-generator/pihole
 
-#### Wireguard
+### Wireguard
+
 [wg-easy](https://github.com/wg-easy/)
+
 ```yaml
 docker run -d \
   --name=wg-easy \
@@ -51,13 +59,13 @@ docker run -d \
   --restart unless-stopped \
   ghcr.io/wg-easy/wg-easy
 ```
-IP: http://192.168.1.101:51821/
-#### Pi.Alert
+
+### Pi.Alert
+
 https://pimylifeup.com/raspberry-pi-pialert/
 
-##### Config
+#### Config
+
 ```bash
 /opt/stacks/pialert/data/config/pialert.conf
 ```
-
-
