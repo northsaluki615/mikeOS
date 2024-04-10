@@ -8,20 +8,26 @@ numberOfLatestPostsToShow: 3
 
 <h1>📚 Mike's Wiki 📚</h1>
 
-<p>These are my notes on various topics. This is based on the concept of a digital garden. It will be pruned and cultivated over time. I hope you find it useful.</p>
-
-<h2>Topics</h2>
+<p>These are my notes on all the things. This is my digital garden. It will be pruned and cultivated over time. I hope you find it useful.</p>
 
 <!-- Assuming this is in wiki.njk or a similar template -->
 <div class="grid-container">
   {% for topic in collections.wikiTopics %}
-    <div class="grid-item">
-      <h2>{{ topic | capitalize }} </h2>
-      <ul>
-        {% for item in collections[topic] %}
-          <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+
   {% endfor %}
+
+{% for tag, emoji in tagEmojis %}
+  <div class="tag-box">
+    <h2>{{ emoji }} {{ tag | capitalize }}</h2>
+    <ul>
+      {% for page in collections.all %}
+        {% if page.data.tags and tag in page.data.tags %}
+          <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+
+
 </div>

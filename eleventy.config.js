@@ -16,12 +16,23 @@ const activityPubPlugin = require('eleventy-plugin-activity-pub');
 const pluginInlineLinkFavicon = require("eleventy-plugin-inline-link-favicon")
 const fs = require("fs");
 const path = require("path");
+const markdownIt = require("markdown-it");
+const wikiLinks = require("markdown-it-wikilinks")({
+	baseURL: "/wiki/",
+	makeAllLinksAbsolute: true,
+	postProcessPageName: (pageName) => {
+	  // Custom processing to adjust the pageName part of the URL
+	  // Example: Convert spaces to hyphens and lowercase everything
+	  return pageName.split('/').map(part => encodeURIComponent(part.trim().toLowerCase().replace(/\s+/g, '-'))).join('/');
+	}
+  });
+  
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
-		"./public/": "/",
+		"./public/": "/**/**/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 
@@ -180,6 +191,20 @@ module.exports = function(eleventyConfig) {
 		  return (item.data.tags || []).includes(tagName);
 		});
 	  });
+	
+	// Set up markdown-it with wikiLinks and markdown-it-anchor
+    let options = {
+        html: true,
+        linkify: true,
+        typographer: true,
+    };
+
+    let markdownLib = markdownIt(options)
+        .use(markdownItAnchor)
+        .use(wikiLinks);
+
+    eleventyConfig.setLibrary("md", markdownLib);
+
 
 
 	// -----------------------------------------------------------------

@@ -45,6 +45,8 @@
 	"dependencies": {
 		"eleventy-plugin-activity-pub": "^0.1.1",
 		"eleventy-plugin-indieweb": "^0.0.1",
-		"eleventy-plugin-inline-link-favicon": "^1.1.0"
+		"eleventy-plugin-inline-link-favicon": "^1.1.0",
+		"markdown-it": "^14.1.0",
+		"markdown-it-wikilinks": "^1.4.0"
 	}
 }

@@ -43,3 +43,31 @@
     text-decoration: underline;
   }
   
+  .tag-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tag-box h2 {
+    margin-top: 0;
+  }
+  
+  .tag-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .tag-box li {
+    padding: 5px 0;
+  }
+  
+  .tag-box li a {
+    text-decoration: none;
+    color: #0074D9;
+  }
+  
+  .tag-box li a:hover {
+    text-decoration: underline;
+  }
+  
