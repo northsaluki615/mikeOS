@@ -206,6 +206,22 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLib);
 
 	// backlinks
+	eleventyConfig.addShortcode('displayBacklinks', function(title) {
+		const backlinks = this.ctx.backlinks || {};
+		const linksToCurrentPage = backlinks[title] || [];
+	
+		if (linksToCurrentPage.length === 0) {
+			return 'No backlinks found.';
+		}
+	
+		let html = '<ul>';
+		linksToCurrentPage.forEach(link => {
+			html += `<li>${link}</li>`; // Adjust to include URL if available
+		});
+		html += '</ul>';
+	
+		return html;
+	});
 	
 
 	// -----------------------------------------------------------------
