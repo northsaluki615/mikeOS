@@ -3,8 +3,9 @@ title: indieweb
 date: 
 updated: 
 description: Notes on the indie-web
-tags: 
+tags:
   - indieweb
+  - self-hosted
 ---
 # the indie-web
 
@@ -19,4 +20,9 @@ tags:
   <li><a href="https://twitter.com/aaronpk" rel="me">Twitter</a></li>
   <li><a href="mailto:mikehelmers@proton.me" rel="me">mikehelmers@proton.me</a></li>
 </ul>
+```
+
+## webmentions
+```html
+<link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 ```

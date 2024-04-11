@@ -36,11 +36,14 @@ layout: layouts/base.njk
 {%- endif %}
 {%- endif %}
 
-{% if post.backlinks %}
-  <h3>Referenced By:</h3>
-  <ul>
-    {% for backlink in post.backlinks %}
-      <li><a href="{{ backlink.url }}">{{ backlink.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endif %}
+<hr>
+  {% if backlinks.length > 0 %}
+    <section class="linking-here">
+      <h2>Articles Linking Here</h2>
+      <ul>
+        {% for link in backlinks %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}

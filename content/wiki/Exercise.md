@@ -3,7 +3,9 @@ title: Exercise
 date: 
 updated: 
 description: Aspiring to be a better version of myself.
-tags: 
+tags:
+  - life
+  - exercise
 ---
 # Exercise
 

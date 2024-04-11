@@ -4,6 +4,8 @@ date:
 updated: 
 description: 
 tags:
+  - philosophy
+  - dating
 ---
 
 # tldr

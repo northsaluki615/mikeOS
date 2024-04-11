@@ -3,7 +3,9 @@ title: kill-the-newsletter
 date: 
 updated: 
 description: The app that kills newsletters
-tags: selfhost
+tags:
+  - self-hosted
+  - news
 ---
 # kill-the-newsletter
 

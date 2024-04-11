@@ -9,14 +9,11 @@
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
-
 	--background-color: #fff;
-
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
-
 	--syntax-tab-size: 2;
 }
 
@@ -25,16 +22,12 @@
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
-
 		--background-color: #15202b;
 	}
 }
-
 
 /* Global stylesheet */
 * {
@@ -56,7 +49,6 @@ body {
 	max-width: 40em;
 }
 
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -125,7 +117,7 @@ code {
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
-	line-height: 1.375; /* 22px /16 */
+	line-height: 1.375;
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
 	tab-size: var(--syntax-tab-size);
@@ -151,7 +143,7 @@ header {
 	padding: 1em;
 }
 .home-link {
-	font-size: 1em; /* 16px /16 */
+	font-size: 1em;
 	font-weight: 700;
 	margin-right: 2em;
 }
@@ -200,14 +192,14 @@ header {
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: 0.8125em;
 	color: var(--color-gray-90);
 }
 .postlist-date {
 	word-spacing: -0.5px;
 }
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: 1.1875em;
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
@@ -274,85 +266,104 @@ h2 + .header-anchor {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-  }
-  
-  .grid-item {
+}
+
+.grid-item {
 	padding: 20px;
 	border: 1px solid #ccc;
-  }
-  
-  .grid-item h2 {
-	margin-top: 0;
-  }
+}
 
-/* Custom CSS for tags*/
-  .posts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust space between posts */
+.grid-item h2 {
+	margin-top: 0;
+}
+
+/* Custom CSS for tags */
+.posts-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .post-item {
-    border: 1px solid #ddd; /* Light border around each post */
-    padding: 15px;
-    border-radius: 8px; /* Slightly rounded corners for aesthetics */
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 8px;
 }
 
 .post-item h2 {
-    margin: 0 0 10px 0; /* Adjust title margin */
-    font-size: 1.25rem; /* Larger font size for post titles */
+	margin: 0 0 10px 0;
+	font-size: 1.25rem;
 }
 
 .post-item h2 a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Dark text for better readability */
+	text-decoration: none;
+	color: #333;
 }
 
 .post-item .post-meta {
-    font-style: italic;
-    color: #666; /* Lighter text for meta information */
+	font-style: italic;
+	color: #666;
 }
 
 .wiki-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 .wiki-header h1 {
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .meta {
-  color: #666;
-  font-style: italic;
+	color: #666;
+	font-style: italic;
 }
 
 .wiki-content {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .wiki-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
 }
 
 .wiki-links {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 .wiki-links li {
-  display: inline;
-  margin-right: 10px;
+	display: inline;
+	margin-right: 10px;
 }
 
 .wiki-links a {
-  text-decoration: none;
-  color: #0074d9;
+	text-decoration: none;
+	color: #0074d9;
 }
 
 .wiki-links a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
+}
+
+.backlinks-section {
+	margin-top: 2em;
+	padding: 1em;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+.backlinks-section h2 {
+	margin-bottom: 0.5em;
+}
+
+.backlinks-section ul {
+	list-style: inside disc;
+}
+
+.backlinks-section ul li a {
+	color: #0366d6;
 }

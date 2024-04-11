@@ -1,9 +1,10 @@
 ---
 title: Newspaper App
-date:   2021-09-26
-updated:  2021-09-26
-description:  A daily "newspaper" app that aggregates news articles from various sources and presents them in a user-friendly format.
+date: 2021-09-26
+updated: 2021-09-26
+description: A daily "newspaper" app that aggregates news articles from various sources and presents them in a user-friendly format.
 tags:
+  - appdev
 ---
 # newsy
 

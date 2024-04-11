@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 ---
+
+{# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 
@@ -9,16 +11,28 @@ layout: layouts/base.njk
     <h1>{{ title }}</h1>
     <p class="meta">Created on {{ page.date | readableDate("MMMM dd, yyyy", "utc") }}</p>
     <ul class="post-metadata">
-    {%- for tag in tags | filterTagList %}
-    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-    {%- endfor %}
-  </ul>
+      {%- for tag in tags | filterTagList %}
+        {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+        <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+      {%- endfor %}
+    </ul>
   </header>
 
   <article class="wiki-content">
     {{ content | safe }}
   </article>
+
+<hr>
+  {% if backlinks.length > 0 %}
+    <section class="linking-here">
+      <h2>Articles Linking Here</h2>
+      <ul>
+        {% for link in backlinks %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
 
   <footer class="wiki-footer">
     <nav>

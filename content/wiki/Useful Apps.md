@@ -3,8 +3,8 @@ title: Useful Apps
 date: 2024-04-10
 updated: 2024-04-10
 description: A list of useful apps.
-tags: 
-  - apps
+tags:
+  - appdev
 ---
 For two years I've been doing home lab business with just 1GB of RAM on this raspberry pi 4b, which was the only model available back then during the haze of semiconductor crisis. Now when that is over I have gotten myself a proper 8GB Raspberry pi 5. So here comes the tribute post of everything I have got running over this time.
 

@@ -14,6 +14,7 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
+const slugify = require("slugify");
 
 // Export the configuration
 module.exports = function(eleventyConfig) {
@@ -62,12 +63,33 @@ module.exports = function(eleventyConfig) {
 		mdLib.use(markdownItAnchor, { permalink: markdownItAnchor.permalink.ariaHidden({ placement: "after", class: "header-anchor", symbol: "#", ariaHidden: false }), level: [1,2,3,4], slugify: eleventyConfig.getFilter("slugify") });
 	});
 
-	eleventyConfig.addShortcode("currentBuildDate", () => { return (new Date()).toISOString(); });
+	eleventyConfig.addShortcode("currentBuildDate", () => { return (new Date()).toISOString(); });	
+
+	// css shortcode
+
+	
 
 	// IndieWeb and ActivityPub plugins
 	eleventyConfig.addPlugin(eleventyPluginIndieWeb, { hCard: { name: "Michael Helmers", url: "https://mike.helmers.me", email: "mikehelmers@proton.me", adr: { locality: "Madison", region: "Wisconsin", countryName: "United States" } } });
 
-	eleventyConfig.addPlugin(activityPubPlugin, { domain: 'mike.helmers.me', username: 'mike', displayName: 'Michael Helmers', summary: 'This is my Eleventy website, now discoverable on the Fediverse!', outbox: true, outboxCollection: 'posts' });
+	eleventyConfig.addPlugin(activityPubPlugin, { domain: 'mike.helmers.me', username: 'mike', displayName: 'Michael Helmers', summary: 'This is my Eleventy website, now discoverable on the Fediverse!'});
+
+	// Registering a collection named "posts"
+    eleventyConfig.addCollection("notes", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("./content/notes/*.md");
+    });
+	// Registering a collection named "wiki"
+    eleventyConfig.addCollection("wiki", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("./content/wiki/*.md");
+    });
+
+	// interlinker plugin
+	eleventyConfig.addPlugin(
+		require('@photogabble/eleventy-plugin-interlinker'),
+		{
+		  defaultLayout: 'layouts/embed.liquid'
+		}
+	  );
 
 	return { templateFormats: ["md", "njk", "html", "liquid"], markdownTemplateEngine: "njk", htmlTemplateEngine: "njk", dir: { input: "content", includes: "../_includes", data: "../_data", output: "_static" }, pathPrefix: "/", };
 };

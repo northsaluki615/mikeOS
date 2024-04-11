@@ -2,8 +2,10 @@
 title: omg.lol
 date: 2021-09-26
 updated: 
-description:  A place to put your now page and your profile page.
-tags: weirdweb
+description: A place to put your now page and your profile page.
+tags:
+  - web
+  - tech
 ---
 # omg.lol
 [Me](https://home.omg.lol/address/mikehelmers/web)

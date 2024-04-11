@@ -1,14 +1,15 @@
 ---
-title: Pi-hole
+title: Pi-hole Setup and Configuration
 date: 2024-04-10
 tags:
   - self-hosted
   - pi-hole
   - wireguard
+  - edgerouter
 description: Comprehensive guide on setting up Pi-hole, configuring DHCP with EdgeRouter Lite, integrating Wireguard for secure VPN access, and monitoring with Pi.Alert.
 updated: 2024-04-10
 ---
-# Pi-hole Raspberry Pi
+# Pi-hole
 
 ### Software
 

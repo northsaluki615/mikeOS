@@ -4,8 +4,8 @@ updated: 2024-04-09
 created: 2024-04-09
 description: Eleventy is a static site generator
 tags:
-  - staticwebsite
-  - 
+  - self-hosted
+  - website
 ---
 # [Eleventy](https://www.11ty.dev) 
 
@@ -78,6 +78,9 @@ module.exports = (eleventyConfig) => {
 ```js
 npm install eleventy-plugin-inline-link-favicon
 ```
+
+### wiki-links
+https://photogabble.co.uk/projects/eleventyjs-interlink-plugin/
 ## Implementing IndieWeb
 
 - incoming webmentions,

@@ -9,12 +9,13 @@ tags:
   - eleventy
   - static-site
   - self-hosted
+  - life
 ---
 # Personal Site
 
 **Domain:** [mikehelmers.com](https://mikehelmers.com) helmers.xyz mikesmusings.xyz mike.helmers.me
 **Host:** 
-**Platform:** [[Eleventy]]
+**Platform:** [[eleventy]]
 ## [[indieweb]]
 
 ## Digital Garden
