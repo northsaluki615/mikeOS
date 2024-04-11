@@ -1,12 +1,10 @@
 ---
-title: Pi-hole Setup and Configuration
+title: Pi-hole
 date: 2024-04-10
 tags:
   - self-hosted
   - pi-hole
   - wireguard
-  - edgerouter
-  - pialert
 description: Comprehensive guide on setting up Pi-hole, configuring DHCP with EdgeRouter Lite, integrating Wireguard for secure VPN access, and monitoring with Pi.Alert.
 updated: 2024-04-10
 ---
@@ -16,7 +14,7 @@ updated: 2024-04-10
 
 #### pi-hole
 
-##### Enable Conditional Forwarding on [[EdgeRouter Lite]]
+##### Enable Conditional Forwarding on [[edgerouter-lite]]
 
 1. Log in to CLI or SSH to Ubiquiti router.
 2. Type: `configure` and hit enter.
