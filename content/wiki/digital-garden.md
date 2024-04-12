@@ -1,5 +1,5 @@
 ---
-title: My Digital Garden
+title: 🍃 My Digital Garden
 date: 2021-09-26
 updated: 2021-09-26
 description: 
@@ -11,10 +11,10 @@ tags:
   - self-hosted
   - life
 ---
-# Personal Site
+# 🍃Personal Site
 
-**Domain:** [mikehelmers.com](https://mikehelmers.com) helmers.xyz mikesmusings.xyz mike.helmers.me
-**Host:** 
+**Domain:** [mike.helmers.me](https://mike.helmers.me)
+**Host:** [Digital Ocean](https://digitalocean.com)
 **Platform:** [[eleventy]]
 ## [[indieweb]]
 
@@ -26,6 +26,7 @@ https://www.reddit.com/r/DigitalGardens/comments/17jw00y/from_jason_my_custom_di
 https://www.fromjason.xyz/
 https://maggieappleton.com/garden-history
 https://www.swyx.io/digital-garden-tos 
+https://photogabble.co.uk
 ### Example
 https://northsaluki615.github.io/indie-web/
 https://github.com/northsaluki615/indie-web
@@ -37,11 +38,11 @@ https://fonts.google.com/specimen/Share+Tech?query=tech&stroke=Sans+Serif&select
 
 ## Needs
 - [ ] Update from phone 
-- [ ] Static Site
+- [x] Static Site
 - [ ] Activity pub
 - [ ] indie web 
-- [ ] Markdown support 
-- [ ] Double-bracket links (the ones roam uses)
+- [x] Markdown support 
+- [x] Double-bracket links (wikilinks)
 - Displays backlinks
 - hovercards for backlinks
 

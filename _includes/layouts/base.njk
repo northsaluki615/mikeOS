@@ -43,6 +43,8 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 		<link rel="stylesheet" href="/public/css/wiki.css">
+		<link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
+		<link rel="proven.lol" href="proven.lol/be5aed" />
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -64,24 +66,24 @@
 		<main id="skip">
 			{{ content | safe }}
 		</main>
-		{% if hCard %}
-		<div class="h-card">
-			<h2 class="p-name">{{ hCard.name }}</h2>
-			<p class="p-role">{{ hCard.role }}</p>
-			<p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
-		</div>
-		{% endif %}
-
-		<footer>
-			<ul>
-			<li><a href="https://github.com/northsaluki615" rel="me">@northsaluki615 on Github</a></li>
-			<li><a rel="me" href="https://infosec.exchange/@northsaluki615">Mastodon</a></li>
-			<li><a href="mailto:mikehelmers@proton.me" rel="me">mikehelmers@proton.me</a></li>
-			<li>proven.lol/be5aed</li>
-			</ul>
-			<link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
-		</footer>
-
-		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
+		
 	</body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/northsaluki615" rel="me">@northsaluki615 on Github</a></li>
+            <li><a rel="me" href="https://infosec.exchange/@northsaluki615">Mastodon</a></li>
+            <li><a href="mailto:mikehelmers@proton.me" rel="me">mikehelmers@proton.me</a></li>
+        </ul>
+    </nav>
+	<body>This page was built on {% currentBuildDate %}</body>
+	{% if hCard %}
+	<div class="h-card">
+		<h2 class="p-name">{{ hCard.name }}</h2>
+		<p class="p-role">{{ hCard.role }}</p>
+		<p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
+	</div>
+	{% endif %}
+</footer>
+
 </html>

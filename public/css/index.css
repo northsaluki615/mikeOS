@@ -394,4 +394,26 @@ h2 + .header-anchor {
   .book-info h3, .book-info p {
 	text-align: center;
   }
-  
+footer {
+    background-color: #333; /* Dark theme */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center-align the list */
+    display: inline-flex;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}

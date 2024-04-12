@@ -59,6 +59,13 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	eleventyConfig.addFilter("filterByTag", function(collection, tag) {
+		return collection.filter(item => {
+		  return (item.data.tags || []).includes(tag);
+		});
+	  });
+	  
+
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, { permalink: markdownItAnchor.permalink.ariaHidden({ placement: "after", class: "header-anchor", symbol: "#", ariaHidden: false }), level: [1,2,3,4], slugify: eleventyConfig.getFilter("slugify") });
 	});
@@ -89,6 +96,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("wiki", function(collectionApi) {
         return collectionApi.getFilteredByGlob("./content/wiki/*.md");
     });
+	// Registering a collection named "allTags"
+	eleventyConfig.addCollection("allTags", function(collectionApi) {
+		let tagSet = new Set();
+		collectionApi.getAll().forEach(item => {
+		  (item.data.tags || []).forEach(tag => tagSet.add(tag));
+		});
+		return [...tagSet];
+	  });
+	  
 
 	// interlinker plugin
 	eleventyConfig.addPlugin(
