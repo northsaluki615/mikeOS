@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
 <link rel="stylesheet" href="/css/prism-okaidia.css">
 <link rel="stylesheet" href="/css/prism-diff.css">
 
@@ -10,48 +9,49 @@ layout: layouts/base.njk
   <div class="e-content">
     {{ content | safe }}
 
-    <section class="reading-list">
-    <h2>📚 Reading 📚</h2>
-    <div class="books-grid">
+    <section class="activity-section reading-list">
+      <h2>📚 Currently Reading 📚</h2>
+      <div class="books-grid">
         {% for item in readinglist %}
-        <div class="book">
-            <img src="{{ item.book.cover }}" alt="Cover of {{ item.book.title }}" class="book-cover"
-                srcset="{{ item.book.cover }} 300w, {{ item.book.coverLarge }} 600w"
-                sizes="(max-width: 768px) 300px, 600px"
-                loading="lazy">
-
+          <div class="book">
+            <img src="{{ item.book.cover }}" alt="Cover of {{ item.book.title }}">
             <div class="book-info">
-            <h3>{{ item.book.title }}</h3>
-            <p>Authors: {{ item.book.authors.join(", ") }}</p>
-            <p>Published: {{ item.book.publishedDate | date("MMMM dd, yyyy") }}</p>
+              <h3>{{ item.book.title }}</h3>
+              <p>Authors: {{ item.book.authors.join(", ") }}</p>
+              <p>Published: {{ item.book.publishedDate | date("MMMM dd, yyyy") }}</p>
             </div>
-        </div>
+          </div>
         {% else %}
-        <p>I'm between books right now, check back later!</p>
+          <p>I'm between books right now, check back later!</p>
         {% endfor %}
-    </div>
+      </div>
     </section>
 
-
-    <section>
+    <section class="activity-section">
       <h2>🎧 Listening 🎧</h2>
-      <p>Update this section with what you're currently listening to.</p>
+      <p>{{ listening | safe }}</p>
+      {% if listeningEmbedUrl %}
+        <iframe style="border-radius:12px" src="{{ listeningEmbedUrl }}" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      {% else %}
+        <p>Update this section with what you're currently listening to.</p>
+      {% endif %}
     </section>
 
-    <section>
+    <section class="activity-section">
       <h2>📺 Watching 📺</h2>
-      <p>Update this section with what you're currently watching.</p>
+      <p>{{ watching | safe }}</p>
     </section>
 
-    <section>
+    <section class="activity-section">
       <h2>🍺 Drinking 🍺</h2>
-      <p>Update this section with what you're currently drinking.</p>
+      <p>{{ drinking | safe }}</p>
     </section>
 
-    <section>
+    <section class="activity-section">
       <h2>🎮 Playing 🎮</h2>
-      <p>Update this section with what games you're currently playing.</p>
+      <p>{{ playing | safe }}</p>
     </section>
 
   </div>
 </article>
+

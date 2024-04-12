@@ -368,29 +368,30 @@ h2 + .header-anchor {
 	color: #0366d6;
 }
 
-.books-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	gap: 20px;
-	padding: 20px;
-  }
-  
   .book {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background: #f9f9f9;
-	border-radius: 8px;
-	overflow: hidden;
   }
   
-  .book-cover {
+  .activity-section {
+	margin-bottom: 2rem;
+  }
+  
+  .books-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 20px;
+  }
+  
+  .book img {
 	width: 100%;
+	max-width: 150px; /* Adjust as needed */
 	height: auto;
+	display: block;
+	margin: 0 auto; /* Center align the book cover */
   }
   
-  .book-info {
-	padding: 15px;
+  .book-info h3, .book-info p {
 	text-align: center;
   }
   
