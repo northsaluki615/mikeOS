@@ -367,3 +367,30 @@ h2 + .header-anchor {
 .backlinks-section ul li a {
 	color: #0366d6;
 }
+
+.books-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 20px;
+  }
+  
+  .book {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f9f9f9;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .book-cover {
+	width: 100%;
+	height: auto;
+  }
+  
+  .book-info {
+	padding: 15px;
+	text-align: center;
+  }
+  

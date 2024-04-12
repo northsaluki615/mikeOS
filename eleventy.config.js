@@ -14,7 +14,7 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
-const slugify = require("slugify");
+const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
 
 // Export the configuration
 module.exports = function(eleventyConfig) {
@@ -65,6 +65,13 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addShortcode("currentBuildDate", () => { return (new Date()).toISOString(); });	
 
+	eleventyConfig.addFilter("date", function(date, format) {
+		// Simple date formatting, adjust as needed
+		const options = { year: 'numeric', month: 'long', day: 'numeric' };
+		return new Date(date).toLocaleDateString("en-US", options);
+	  });
+	  
+
 	// css shortcode
 
 	
@@ -90,6 +97,20 @@ module.exports = function(eleventyConfig) {
 		  defaultLayout: 'layouts/embed.liquid'
 		}
 	  );
+	
+	// Bookwyrm plugin
+		// Pass the username and domain separately
+		// e.g. if you are p.blart@bookwyrm.social, user is p.blart,
+		// and the domain is bookwyrm.social
+	eleventyConfig.addPlugin(bookwyrmFeed, {
+		user: 'northsaluki615',
+		domain: 'bookwyrm.social',
+		dataKey: "readinglist" // Optional, defaults to "bookwyrm"
+	});
+	eleventyConfig.on('afterBuild', () => {
+		console.log(eleventyConfig.globalData.readinglist); // Adjust based on actual global data structure
+	});
+	
 
 	return { templateFormats: ["md", "njk", "html", "liquid"], markdownTemplateEngine: "njk", htmlTemplateEngine: "njk", dir: { input: "content", includes: "../_includes", data: "../_data", output: "_static" }, pathPrefix: "/", };
 };

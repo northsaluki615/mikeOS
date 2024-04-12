@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+---
+{# Only include the syntax highlighter CSS on blog posts #}
+<link rel="stylesheet" href="/css/prism-okaidia.css">
+<link rel="stylesheet" href="/css/prism-diff.css">
+
+<article class="h-entry">
+  <h1 class="p-name">{{ title }}</h1>
+  <div class="e-content">
+    {{ content | safe }}
+
+    <section class="reading-list">
+    <h2>📚 Reading 📚</h2>
+    <div class="books-grid">
+        {% for item in readinglist %}
+        <div class="book">
+            <img src="{{ item.book.cover }}" alt="Cover of {{ item.book.title }}" class="book-cover"
+                srcset="{{ item.book.cover }} 300w, {{ item.book.coverLarge }} 600w"
+                sizes="(max-width: 768px) 300px, 600px"
+                loading="lazy">
+
+            <div class="book-info">
+            <h3>{{ item.book.title }}</h3>
+            <p>Authors: {{ item.book.authors.join(", ") }}</p>
+            <p>Published: {{ item.book.publishedDate | date("MMMM dd, yyyy") }}</p>
+            </div>
+        </div>
+        {% else %}
+        <p>I'm between books right now, check back later!</p>
+        {% endfor %}
+    </div>
+    </section>
+
+
+    <section>
+      <h2>🎧 Listening 🎧</h2>
+      <p>Update this section with what you're currently listening to.</p>
+    </section>
+
+    <section>
+      <h2>📺 Watching 📺</h2>
+      <p>Update this section with what you're currently watching.</p>
+    </section>
+
+    <section>
+      <h2>🍺 Drinking 🍺</h2>
+      <p>Update this section with what you're currently drinking.</p>
+    </section>
+
+    <section>
+      <h2>🎮 Playing 🎮</h2>
+      <p>Update this section with what games you're currently playing.</p>
+    </section>
+
+  </div>
+</article>

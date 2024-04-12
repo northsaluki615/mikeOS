@@ -45,6 +45,7 @@
 	"dependencies": {
 		"@photogabble/eleventy-plugin-interlinker": "^1.0.5",
 		"eleventy-plugin-activity-pub": "^0.1.1",
+		"eleventy-plugin-bookwyrm": "^1.4.0",
 		"eleventy-plugin-indieweb": "^0.0.1",
 		"eleventy-plugin-inline-link-favicon": "^1.1.0",
 		"markdown-it": "^14.1.0",
