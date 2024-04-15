@@ -17,3 +17,5 @@ tags:
   - Does everyone want to hear about my latestes Dwarf Fortress obsession? Maybe
 - [ ] Don't self-limit
 - [ ] Persevere
+- [ ] Know your strengths
+- [ ] 

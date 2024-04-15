@@ -7,13 +7,14 @@ tags:
   - raspberrypi
   - hacking
   - ai
+  - project
 ---
 # pwnagotchi
 
 # wiki
 
 <https://pwnagotchi.ai>
-
+https://pwnagotchi.org/
 ## Install
 
 **To write your Pwnagotchi image with balenaEtcher:**
@@ -25,7 +26,7 @@ tags:
 - Open **balenaEtcher** and select from your hard drive the Raspberry Pi `.img` or `.zip` file you wish to write to the SD card.
 - Select the SD card you wish to write your image to.
 - Review your selections, then click `Flash!` to begin writing data to the SD card.
-
+https://github.com/jayofelony/pwnagotchi
 ### config.toml
 
 **Location:** `/etc/pwnagotchi/config.toml`
@@ -42,15 +43,14 @@ main.whitelist = [
 main.plugins.grid.enabled = true
 main.plugins.grid.report = true
 main.plugins.grid.exclude = [
-  "The Helmers Homestead",
-  "Helmers Friends and Family"
+  "The Helmers Homestead"
 ]
-main.plugins.bt-tether.enabled = false
+main.plugins.bt-tether.enabled = true
 main.plugins.memtemp.enabled = true
 main.plugins.logtail.enabled = true
 ui.web.enabled = true
-ui.web.username = "mike"
-ui.web.password = "GoodGirl"
+ui.web.username = "USERNAME"
+ui.web.password = "AGOODPASSWORD"
 
 ui.display.enabled = true
 ui.display.type = "waveshare_2"
