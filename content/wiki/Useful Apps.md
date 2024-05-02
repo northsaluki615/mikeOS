@@ -19,7 +19,7 @@ For two years I've been doing home lab business with just 1GB of RAM on this ras
 
 **Squid**
 
-* Caching HTTP proxy with ad blocking and time based access list for various services, ( no reddit/HN during business hours etc. )
+* Caching HTTP proxy with ad blocking and time based access list for various [[services]], ( no reddit/HN during business hours etc. )
 
 **postfix + dovecot**
 
@@ -83,5 +83,5 @@ For two years I've been doing home lab business with just 1GB of RAM on this ras
 
 * blinking leds for different occasions - project scrapped, wife unapproved.
 
-To be completely fair, all of this only needs about 500MB of ram with about as much swapped ( compressed with zram ), so there is room for other services.
-With new raspi it will be possible to finnaly host the most important service of them all - **minecraft server**
+To be completely fair, all of this only needs about 500MB of ram with about as much swapped ( compressed with zram ), so there is room for other [[services]].
+With new raspi it will be possible to finnaly host the most important service of them all - **[[minecraft]] server**

@@ -11,4 +11,6 @@ tags:   tech
 - internet access
 - local first
 - private
-- home assistant
+- [[Home Assistant]]
+- https://www.scrypted.app/
+- 

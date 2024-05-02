@@ -26,3 +26,7 @@ tags:
 ```html
 <link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 ```
+
+### Example
+https://northsaluki615.github.io/northsaluki615/
+https://github.com/northsaluki615/indie-web

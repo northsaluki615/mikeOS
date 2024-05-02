@@ -11,7 +11,7 @@ tags:
   - self-hosted
   - life
 ---
-# 🍃Personal Site
+# 🍃 Personal Site
 
 **Domain:** [mike.helmers.me](https://mike.helmers.me)
 **Host:** [Digital Ocean](https://digitalocean.com)
@@ -19,22 +19,17 @@ tags:
 ## [[indieweb]]
 
 ## Digital Garden
-https://www.mentalnodes.com/a-gardening-guide-for-your-mind
-https://github.com/maggieappleton/digital-gardeners
-https://tomcritchlow.com/
-https://www.reddit.com/r/DigitalGardens/comments/17jw00y/from_jason_my_custom_digital_garden_in_11ty/
-https://www.fromjason.xyz/
-https://maggieappleton.com/garden-history
-https://www.swyx.io/digital-garden-tos 
-https://photogabble.co.uk
-### Example
-https://northsaluki615.github.io/indie-web/
-https://github.com/northsaluki615/indie-web
-
+- https://www.mentalnodes.com/a-gardening-guide-for-your-mind
+- https://github.com/maggieappleton/digital-gardeners
+- https://tomcritchlow.com/
+- https://www.reddit.com/r/DigitalGardens/comments/17jw00y/from_jason_my_custom_digital_garden_in_11ty/
+- https://www.fromjason.xyz/
+- https://maggieappleton.com/garden-history
+- https://www.swyx.io/digital-garden-tos
+- https://photogabble.co.uk
 ## Fonts
-
-https://fonts.google.com/specimen/Protest+Revolution?stroke=Sans+Serif&selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@24
-https://fonts.google.com/specimen/Share+Tech?query=tech&stroke=Sans+Serif&selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@24
+- https://fonts.google.com/specimen/Protest+Revolution?stroke=Sans+Serif&selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@24
+- https://fonts.google.com/specimen/Share+Tech?query=tech&stroke=Sans+Serif&selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@24
 
 ## Needs
 - [ ] Update from phone 

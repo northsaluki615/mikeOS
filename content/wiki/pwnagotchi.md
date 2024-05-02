@@ -15,6 +15,7 @@ tags:
 
 <https://pwnagotchi.ai>
 https://pwnagotchi.org/
+https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/
 ## Install
 
 **To write your Pwnagotchi image with balenaEtcher:**
