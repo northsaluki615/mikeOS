@@ -27,6 +27,9 @@ tags:
 <link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 ```
 
+### Helpful [[linkedin.com/in/michaelhelmers|linkedin.com/in/michaelhelmers]] https://rknight.me/blog/adding-webmentions-to-your-site/
+
 ### Example
 https://northsaluki615.github.io/northsaluki615/
 https://github.com/northsaluki615/indie-web
+
