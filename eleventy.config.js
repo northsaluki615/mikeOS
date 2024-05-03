@@ -15,6 +15,7 @@ const pluginImages = require("./eleventy.config.images.js");
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
 const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
+const embedSpotify = require("eleventy-plugin-embed-spotify");
 
 // Export the configuration
 module.exports = function(eleventyConfig) {
@@ -126,7 +127,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.on('afterBuild', () => {
 		console.log(eleventyConfig.globalData.readinglist); // Adjust based on actual global data structure
 	});
+	eleventyConfig.addPlugin(embedSpotify);
 	
-
 	return { templateFormats: ["md", "njk", "html", "liquid"], markdownTemplateEngine: "njk", htmlTemplateEngine: "njk", dir: { input: "content", includes: "../_includes", data: "../_data", output: "_static" }, pathPrefix: "/", };
 };
