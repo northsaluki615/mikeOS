@@ -21,7 +21,7 @@ Here's what I'm up to right now.
           <div class="book-info">
             <h3>{{ item.book.title }}</h3>
             <p>Authors: {{ item.book.authors.join(", ") }}</p>
-            <p>Published: {{ item.book.publishedDate | date("MMMM dd, yyyy") }}</p>
+            <p>Current Status: {{ currentStatus.status }} on {{ currentStatus.date | date("MMMM dd, yyyy") }}</p>
           </div>
         </div>
       {% endif %}
