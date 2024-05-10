@@ -1,1 +1,0 @@
-https://rknight.me/blog/automating-my-now-page/
