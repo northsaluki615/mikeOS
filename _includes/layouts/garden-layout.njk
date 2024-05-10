@@ -1,8 +1,8 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="wiki-container">
-  <header class="wiki-header">
+<div class="garden-container">
+  <header class="garden-header">
     <h1>{{ title }}</h1>
     <p class="meta">Created on {{ page.date | readableDate("MMMM dd, yyyy", "utc") }}</p>
     <ul class="post-metadata">
@@ -13,7 +13,7 @@ layout: layouts/base.njk
     </ul>
   </header>
 
-  <article class="wiki-content">
+  <article class="garden-content">
     {{ content | safe }}
   </article>
 
@@ -29,10 +29,10 @@ layout: layouts/base.njk
     </section>
   {% endif %}
 
-  <footer class="wiki-footer">
+  <footer class="garden-footer">
     <nav>
-      <ul class="wiki-links">
-        <li><a href="/wiki/">All Wiki Articles</a></li>
+      <ul class="garden-links">
+        <li><a href="/garden/">All garden Articles</a></li>
         <li><a href="/tags/">Tags Index</a></li>
       </ul>
     </nav>

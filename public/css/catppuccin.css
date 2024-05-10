@@ -1,164 +1,166 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+  --font-family: -apple-system, system-ui, sans-serif;
+  --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+  --syntax-tab-size: 2;
+
+  /* Default theme */
+  --background-color: #eff1f5; /* Latte */
+  --text-color: #4c4f69; /* Latte */
+  --text-color-link: #dd7878; /* Latte */
+  --text-color-link-active: #ea76cb; /* Latte */
+  --text-color-link-visited: #8839ef; /* Latte */
+  --color-gray-20: #e0e0e0;
+  --color-gray-50: #C0C0C0;
+  --color-gray-90: #333;
 }
 
-/* Theme colors */
-/*:root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
-	--background-color: #fff;
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-	--syntax-tab-size: 2;
-}*/
-
 .theme-latte {
-	--background-color: #eff1f5;
-	--text-color: #4c4f69;
-	--text-color-link: #dd7878;
-	--text-color-link-active: #ea76cb;
-	--text-color-link-visited: #8839ef;
-	--syntax-tab-size: 2;
-  }
-  
-  .theme-frappe {
-	--background-color: #303446;
-	--text-color: #c6d0f5;
-	--text-color-link: #eebebe;
-	--text-color-link-active: #f4b8e4;
-	--text-color-link-visited: #ca9ee6;
-	--syntax-tab-size: 2;
-  }
-  
-  .theme-macchiato {
-	--primary-color: #f4dbd6;
-	--secondary-color: #f0c6c6;
-	--accent-color: #c6a0f6;
-	--background-color: #24273a;
-	--text-color: var(--accent-color);
-	--syntax-tab-size: 2;
-  }
-  .theme-mocha {
-	--primary-color: #f5e0dc;
-	--secondary-color: #f2cdcd;
-	--accent-color: #cba6f7;
-	--background-color: #1e1e2e;
-	--text-color: var(--accent-color);
-	--syntax-tab-size: 2;
-  }
+  --background-color: #eff1f5;
+  --text-color: #4c4f69;
+  --text-color-link: #dd7878;
+  --text-color-link-active: #ea76cb;
+  --text-color-link-visited: #8839ef;
+}
 
+.theme-frappe {
+  --background-color: #303446;
+  --text-color: #c6d0f5;
+  --text-color-link: #eebebe;
+  --text-color-link-active: #f4b8e4;
+  --text-color-link-visited: #ca9ee6;
+}
+
+.theme-macchiato {
+  --primary-color: #f4dbd6;
+  --secondary-color: #f0c6c6;
+  --accent-color: #c6a0f6;
+  --background-color: #24273a;
+  --text-color: var(--accent-color);
+}
+.theme-mocha {
+  --primary-color: #f5e0dc;
+  --secondary-color: #f2cdcd;
+  --accent-color: #cba6f7;
+  --background-color: #1e1e2e;
+  --text-color: var(--accent-color);
+}
 
 /* Global stylesheet */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: var(--font-family);
-	color: var(--text-color);
-	background-color: var(--background-color);
+  padding: 0;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
+
 html {
-	overflow-y: scroll;
+  height: 100%;
+  overflow-y: scroll;
 }
+
 body {
-	max-width: 40em;
+  max-width: 40em;
+  min-height: 100%;
+  width: 100%;
+  display: block; /* Ensures body behaves as a block-level element */
 }
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 p:last-child {
-	margin-bottom: 0;
-}
-p {
-	line-height: 1.5;
+  margin-bottom: 0;
 }
 
-li {
-	line-height: 1.5;
+p, li {
+  line-height: 1.5;
 }
 
 a[href] {
-	color: var(--text-color-link);
+  color: var(--text-color-link);
 }
+
 a[href]:visited {
-	color: var(--text-color-link-visited);
+  color: var(--text-color-link-visited);
 }
+
 a[href]:hover,
 a[href]:active {
-	color: var(--text-color-link-active);
+  color: var(--text-color-link-active);
 }
 
 main {
-	padding: 1rem;
+  padding: 1rem;
 }
+
 main :first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+  border-bottom: 1px dashed var(--color-gray-20);
 }
+
 header:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .links-nextprev {
-	list-style: none;
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
+  list-style: none;
+  border-top: 1px dashed var(--color-gray-20);
+  padding: 1em 0;
 }
 
 table {
-	margin: 1em 0;
-}
-table td,
-table th {
-	padding-right: 1em;
+  margin: 1em 0;
 }
 
-pre,
-code {
-	font-family: var(--font-family-monospace);
+table td, table th {
+  padding-right: 1em;
 }
+/* End of snippet from public/css/index.css */
+pre, code {
+  font-family: var(--font-family-monospace);
+  line-height: 1.375;
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+}
+
 pre:not([class*="language-"]) {
-	margin: .5em 0;
-	line-height: 1.375;
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-}
-code {
-	word-break: break-all;
+  margin: .5em 0;
 }
 
-/* Header */
+code {
+  word-break: break-all;
+}
+
+/* Navigation and layout styling below remains unchanged */
+* Header */
 header {
 	display: flex;
 	gap: 1em .5em;
@@ -440,49 +442,4 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     text-decoration: underline;
-}
-
-/* Styling for the theme switcher dropdown */
-nav {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-#theme-select {
-    padding: 8px;
-    margin-left: 10px;
-    border: 1px solid var(--color-gray-50);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#theme-select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-/* Adjust the dropdown arrow style */
-#theme-select::-ms-expand {
-    display: none;
-}
-
-#theme-select::after {
-    content: '▼';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 15px;
-    background: var(--primary-color);
-    cursor: pointer;
-    pointer-events: none;
-    transition: 0.25s all ease;
-}
-
-/* Add some padding inside the nav container */
-nav {
-    padding: 10px 20px;
 }

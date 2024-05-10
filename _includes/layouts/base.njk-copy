@@ -42,25 +42,6 @@
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
-
-		<script>
-			// Example JavaScript to switch themes based on a saved preference or default
-			document.addEventListener('DOMContentLoaded', function() {
-				// Set Frappe as the default theme if no theme is saved in localStorage
-				const currentTheme = localStorage.getItem('theme') || 'theme-frappe';
-				document.body.classList.add(currentTheme);
-				document.getElementById('theme-select').value = currentTheme;
-			});
-
-			function changeTheme(newTheme) {
-				document.body.className = ''; // Remove existing theme classes
-				document.body.classList.add(newTheme);
-				localStorage.setItem('theme', newTheme);
-			}
-
-
-		</script>
-
 		<link rel="stylesheet" href="/public/css/wiki.css">
 		<link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 		<link rel="proven.lol" href="proven.lol/be5aed" />
@@ -79,14 +60,6 @@
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
-				<!-- Theme Switcher Dropdown in Navigation -->
-				<label for="theme-select">Choose Theme:</label>
-				<select id="theme-select" onchange="changeTheme(this.value)">
-					<option value="theme-latte">Latte</option>
-					<option value="theme-frappe" selected="selected">Frappe</option>
-					<option value="theme-macchiato">Macchiato</option>
-					<option value="theme-mocha">Mocha</option>
-				</select>
 			</nav>
 		</header>
 
