@@ -1,6 +1,6 @@
 # mikeOS
 
-This is a blog about my operating system development project. I am developing an operating system from scratch, and I am documenting the process here. I am using the (https://github.com/11ty/eleventy-base-blog.git).
+This is a story about my life. I am developing an operating system from scratch, and I am documenting the process here. I am using the (https://github.com/11ty/eleventy-base-blog.git).
 
 A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
 
