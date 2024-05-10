@@ -37,7 +37,7 @@ tags:
 - [ ] Activity pub
 - [ ] indie web 
 - [x] Markdown support 
-- [x] Double-bracket links (wikilinks)
+- [x] Double-bracket links ()
 - Displays backlinks
 - hovercards for backlinks
 
