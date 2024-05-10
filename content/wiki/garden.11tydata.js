@@ -1,6 +1,6 @@
 module.exports = {
 	tags: [
-		"garden"
+		"wiki"
 	],
 	"layout": "layouts/garden-layout.njk",
 };
