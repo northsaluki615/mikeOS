@@ -1,11 +1,11 @@
 ---
 layout: layouts/now.njk
 eleventyNavigation:
-  key: 📌 Now
+  key: 📌 now
   order: 4
 ---
 
-# Mike Now
+# mike now
 
 Here's what I'm up to right now.
 

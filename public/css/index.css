@@ -431,9 +431,6 @@ h2 + .header-anchor {
 	text-align: center;
   }
 footer {
-    background-color: #333; /* Dark theme */
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
 }
 

@@ -42,7 +42,7 @@
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
-		<link rel="stylesheet" href="/public/css/wiki.css">
+		<link rel="stylesheet" href="/public/css/garden.css">
 		<link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 		<link rel="proven.lol" href="proven.lol/be5aed" />
 	</head>
