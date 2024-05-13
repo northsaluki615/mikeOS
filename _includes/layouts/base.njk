@@ -2,19 +2,14 @@
 <html lang="{{ metadata.language }}">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
-    	 <!-- Favicon links -->
-	    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    	<link rel="manifest" href="site.webmanifest">
-    	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    	<meta name="msapplication-TileColor" content="#da532c">
-    	<meta name="theme-color" content="#ffffff">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    	<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico">
+		<link rel="alternative icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-196x196.png">
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -67,50 +62,13 @@
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<div class="content">
+			{% include "header.njk" %}
 
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-				<!-- Theme Switcher Dropdown in Navigation -->
-				<label for="theme-select">Choose Theme:</label>
-				<select id="theme-select" onchange="changeTheme(this.value)">
-					<option value="theme-latte">Latte</option>
-					<option value="theme-frappe" selected="selected">Frappe</option>
-					<option value="theme-macchiato">Macchiato</option>
-					<option value="theme-mocha">Mocha</option>
-				</select>
-			</nav>
-		</header>
-
-		<main id="skip">
-			{{ content | safe }}
-		</main>
-		
+			<main id="skip">
+				{{ content | safe }}
+			</main>
+		</div>
+		{% include "footer.njk" %}
 	</body>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/northsaluki615" rel="me">@northsaluki615 on Github</a></li>
-            <li><a rel="me" href="https://infosec.exchange/@northsaluki615">Mastodon</a></li>
-            <li><a href="mailto:mikehelmers@proton.me" rel="me">mikehelmers@proton.me</a></li>
-        </ul>
-    </nav>
-	<body>This page was built on {% currentBuildDate %}</body>
-	{% if hCard %}
-	<div class="h-card">
-		<h2 class="p-name">{{ hCard.name }}</h2>
-		<p class="p-role">{{ hCard.role }}</p>
-		<p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
-	</div>
-	{% endif %}
-</footer>
-
 </html>
