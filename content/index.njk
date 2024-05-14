@@ -5,11 +5,15 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
-{% set postsCount = collections.posts | length %}
+<div class="intro-text">
+  <p>Thank you for visiting my new home on the Internet! I'm Mike Helmers, a simple man making his way through the galaxy. This site will grow as time goes on, so please check back often as it begins to take shape.</p>
+</div>
+
+{% set postsCount = collections.notes | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Note{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslist = collections.notes | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
 

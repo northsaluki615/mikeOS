@@ -90,13 +90,13 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(activityPubPlugin, { domain: 'mike.helmers.me', username: 'mike', displayName: 'Michael Helmers', summary: 'This is my Eleventy website, now discoverable on the Fediverse!'});
 
-	// Registering a collection named "posts"
+	// Registering a collection named "notes"
     eleventyConfig.addCollection("notes", function(collectionApi) {
         return collectionApi.getFilteredByGlob("./content/notes/*.md");
     });
-	// Registering a collection named "wiki"
-    eleventyConfig.addCollection("wiki", function(collectionApi) {
-        return collectionApi.getFilteredByGlob("./content/wiki/*.md");
+	// Registering a collection named "garden"
+    eleventyConfig.addCollection("garden", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("./content/garden/*.md");
     });
 	// Registering a collection named "allTags"
 	eleventyConfig.addCollection("allTags", function(collectionApi) {
