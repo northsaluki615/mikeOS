@@ -1,0 +1,25 @@
+---
+permalink: "/feed.xml"
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>mikeOS</title>
+  <link>https://mike.helmers.me/</link>
+  <description>My weird corner of the internet</description>
+  <language>en</language>
+  <managingEditor>mikehelmers@proton.me (Mike Helmers)</managingEditor>
+  <webMaster>mikehelmers@proton.me (Mike Helmers)</webMaster>
+  {% for item in collections.notes %}
+  <item>
+    <title>{{ item.data.title }}</title>
+    <link>{{ page.url | url }}</link>
+    <description>{{ item.templateContent | safe }}</description>
+    <pubDate>{{ item.date | dateToRfc3339 }}</pubDate>
+    <guid isPermaLink="true">{{ page.url | url }}</guid>
+  </item>
+  {% endfor %}
+</channel>
+</rss>
