@@ -1,6 +1,4 @@
-
 <footer>
-    
     <nav>
         <ul>
             <li><a rel="me" href="https://github.com/northsaluki615"><i class="fa-brands fa-github"></i></a></li>
@@ -10,13 +8,13 @@
             <li><a rel="me" href="https://mike.helmers.me/feed.xml"><i class="fa-solid fa-rss"></i></a></li>
         </ul>
     </nav>
-	<body>This page was built with <a href="https://www.11ty.dev/">Eleventy</a> on {% currentBuildDate %}</body>
-	{% if hCard %}
-	<div class="h-card">
-		<h2 class="p-name">{{ hCard.name }}</h2>
-		<p class="p-role">{{ hCard.role }}</p>
-		<p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
-	</div>
-	{% endif %}
+    <p>This page was built with <a href="https://www.11ty.dev/">Eleventy</a> on {% currentBuildDate %}</p>
+    {% if hCard %}
+    <div class="h-card">
+        <h2 class="p-name">{{ hCard.name }}</h2>
+        <p class="p-role">{{ hCard.role }}</p>
+        <p class="p-email">Email: <a href="mailto:{{ hCard.email }}">{{ hCard.email }}</a></p>
+    </div>
+    {% endif %}
     <link rel="webmention" href="https://webmention.io/mike.helmers.me/webmention" />
 </footer>

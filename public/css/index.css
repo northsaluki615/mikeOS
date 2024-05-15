@@ -495,3 +495,11 @@ nav {
 nav {
     padding: 10px 20px;
 }
+
+.icon-pixelfed {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/public/img/pixelfed.svg');
+    background-size: cover;
+}

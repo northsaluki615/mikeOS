@@ -21,6 +21,8 @@ const embedSpotify = require("eleventy-plugin-embed-spotify");
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({"./public/": "/**/**/", "./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"});
 	eleventyConfig.addPassthroughCopy({"./public/**/*": "/"});
+	eleventyConfig.addPassthroughCopy("./src/images/*.svg");
+
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
