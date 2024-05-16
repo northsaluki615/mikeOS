@@ -6,9 +6,9 @@ eleventyNavigation:
 numberOfLatestPostsToShow: 3
 ---
 
-<h1>🍃 mike's digital garden 🍃</h1>
+<h1>🍃 Mike's Digital Garden 🍃</h1>
 <p>Welcome to my digital garden! This is where I plant seeds of ideas, nurture them, and watch them grow. I'm always learning and experimenting, so this space is a reflection of that journey. I hope you find something interesting or useful here. 🌱</p>
-<h2>Terminonlogy</h2>
+<h2>Terminology</h2>
 <p>This is heavily borrowed from <a href="https://maggieappleton.com/garden-terminology">Maggie Appleton's</a> website. I've adopted a similar system to help me keep track of the ideas I'm exploring.</p>
 <ul>
 <li><strong>🌱 Seedling</strong>: A new idea or concept that I'm exploring.</li>
@@ -16,24 +16,29 @@ numberOfLatestPostsToShow: 3
 <li><strong>🌳 Evergreen</strong>: A fully-formed idea that I've written about in detail.</li>
 </ul>
 
+{% set tagEmojis = {
+  "technology": "👨‍💻",
+  "philosophy": "📚",
+  "productivity": "⏳",
+  "indieweb": "🌐",
+  "gaming": "🎮",
+  "infosec": "🔒",
+  "life": "🧬",
+  "self-hosted": "🖥️",
+  "recipe": "🍽️"
+} %}
 
 <div class="grid-container">
-  {% for topic in collections.wikiTopics %}
-
+  {% for tag in collections.topTags %}
+    <div class="tag-box">
+      <h2>{{ tagEmojis[tag[0]] | default('🏷️') }} {{ tag[0] | capitalize }}</h2>
+      <ul>
+        {% for page in collections.all %}
+          {% if page.data.tags and tag[0] in page.data.tags %}
+            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   {% endfor %}
-
-{% for tag, emoji in tagEmojis %}
-  <div class="tag-box">
-    <h2>{{ emoji }} {{ tag | capitalize }}</h2>
-    <ul>
-      {% for page in collections.all %}
-        {% if page.data.tags and tag in page.data.tags %}
-          <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
-
-
 </div>

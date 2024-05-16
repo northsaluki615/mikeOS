@@ -108,7 +108,32 @@ module.exports = function(eleventyConfig) {
 		});
 		return [...tagSet];
 	  });
-	  
+	// Registering a collection named "topTags"
+    eleventyConfig.addCollection("topTags", function(collection) {
+        let tagMap = new Map();
+        const excludedTags = new Set(["garden", "seedling", "sprout", "evergreen"]);  // Define tags to exclude
+
+        collection.getAll().forEach(function(item) {
+            if ("tags" in item.data && item.data.tags.includes("garden")) {
+                let tags = item.data.tags;
+                tags.forEach(function(tag) {
+                    if (!excludedTags.has(tag)) {  // Check if the tag is not in the excluded list
+                        if (tagMap.has(tag)) {
+                            tagMap.set(tag, tagMap.get(tag) + 1);
+                        } else {
+                            tagMap.set(tag, 1);
+                        }
+                    }
+                });
+            }
+        });
+
+        // Convert to sorted array
+        let sortedTags = [...tagMap.entries()].sort((a, b) => b[1] - a[1]);
+        return sortedTags.slice(0, 4); // Return top 4 tags
+    });
+
+
 
 	// interlinker plugin
 	eleventyConfig.addPlugin(
