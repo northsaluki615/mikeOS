@@ -5,7 +5,6 @@ updated: 2024-05-13
 description: Notes on the indie-web
 tags:
   - indieweb
-  - philosophy
   - seedling
 ---
 # the indie-web

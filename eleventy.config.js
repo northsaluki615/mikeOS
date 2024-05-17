@@ -16,6 +16,8 @@ const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
 const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
 const embedSpotify = require("eleventy-plugin-embed-spotify");
+const markdownIt = require("markdown-it");
+const markdownItTaskCheckbox = require("markdown-it-task-checkbox");
 
 // Export the configuration
 module.exports = function(eleventyConfig) {
@@ -83,7 +85,17 @@ module.exports = function(eleventyConfig) {
 	  });
 	  
 
-	// css shortcode
+	// Configure Markdown-it with the task checkbox plugin
+	let markdownLib = markdownIt().use(markdownItTaskCheckbox, {
+		disabled: false, // Make checkboxes interactive
+		divWrap: true,   // Wrap checkbox in a div for easier styling
+		divClass: 'checkbox',
+		idPrefix: 'cbx_',
+		ulClass: 'task-list',
+		liClass: 'task-list-item'
+	  });
+	// Set the Markdown library to Eleventy's markdown library
+	eleventyConfig.setLibrary("md", markdownLib);
 
 	
 

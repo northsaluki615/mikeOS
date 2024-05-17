@@ -43,3 +43,8 @@ numberOfLatestPostsToShow: 3
     </div>
   {% endfor %}
 </div>
+
+<h2>All Plantings</h2>
+{% set postslist = collections.garden %}
+
+{% include "postslist.njk" %}
