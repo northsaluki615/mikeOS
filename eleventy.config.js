@@ -1,4 +1,3 @@
-// Purpose: Configure Eleventy for this project.
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -85,15 +84,18 @@ module.exports = function(eleventyConfig) {
 	  });
 	  
 
-	// Configure Markdown-it with the task checkbox plugin
-	let markdownLib = markdownIt().use(markdownItTaskCheckbox, {
+	// Configure Markdown-it with the task checkbox plugin and HTML enabled
+	let markdownLib = markdownIt({
+		html: true // Enable HTML tags in source
+	}).use(markdownItTaskCheckbox, {
 		disabled: false, // Make checkboxes interactive
 		divWrap: true,   // Wrap checkbox in a div for easier styling
 		divClass: 'checkbox',
 		idPrefix: 'cbx_',
 		ulClass: 'task-list',
 		liClass: 'task-list-item'
-	  });
+	});
+	
 	// Set the Markdown library to Eleventy's markdown library
 	eleventyConfig.setLibrary("md", markdownLib);
 
@@ -169,5 +171,17 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(embedSpotify);
 	
-	return { templateFormats: ["md", "njk", "html", "liquid"], markdownTemplateEngine: "njk", htmlTemplateEngine: "njk", dir: { input: "content", includes: "../_includes", data: "../_data", output: "_static" }, pathPrefix: "/", };
-};
+
+	return { 
+		templateFormats: ["md", "njk", "html", "liquid"], 
+		markdownTemplateEngine: "njk", 
+		htmlTemplateEngine: "njk", 
+		dir: { 
+		  input: "content", 
+		  includes: "../_includes", 
+		  data: "../_data", 
+		  output: "_static" 
+		}, 
+		pathPrefix: "/", 
+	  };
+	};

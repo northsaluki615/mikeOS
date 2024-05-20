@@ -1,5 +1,5 @@
 ---
-layout: layouts/now.njk
+layout: layouts/base.njk
 eleventyNavigation:
   key: 📌 now
   order: 4
@@ -9,7 +9,7 @@ eleventyNavigation:
 
 Here's what I'm up to right now.
 
-## 📚 Currently Reading 📚
+## 📚 currently reading 📚
 
 <section class="activity-section reading-list">
   <div class="books-grid">
@@ -31,21 +31,21 @@ Here's what I'm up to right now.
   </div>
 </section>
 
-## 🎧 Listening 🎧
+## 🎧 listening 🎧
 
 Currently vibing to Gary Clark Jr. You can listen along here:
 
 https://open.spotify.com/embed/album/09XurHGqbBgvj7SH96UbPV
 
-## 📺 Watching 📺
+## 📺 watching 📺
 
 Binge-watching **The Mandalorian** on Disney+. Absolutely love the Star Wars universe! More details [here](#).
 
-## 🍻 Drinking 🍻
+## 🍻 drinking 🍻
 
 Exploring the world of craft beers. The [Local Craft IPA](#) has been a recent favorite.
 
-## 🎮 Playing 🎮
+## 🎮 playing 🎮
 
 Hooked on [Helldivers](#) lately. The art and gameplay are top-notch.
 
