@@ -504,6 +504,18 @@ nav {
     background-size: cover;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
 @font-face {
 	font-family: 'Source Code Pro';
 	src: url('/fonts/SourceCodePro-Regular.otf') format('opentype');
