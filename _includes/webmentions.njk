@@ -1,21 +1,16 @@
 <section id="webmentions">
   <h2>Webmentions</h2>
-  {%- set webmentions = webmentions | eleventyNavigation %}
-  {%- if webmentions.length > 0 %}
+  {% set webmentions = webmentions[page.url] %}
+  {% if webmentions %}
     <ul>
-      {%- for mention in webmentions %}
+      {% for mention in webmentions %}
         <li>
           <strong>{{ mention.author.name }}</strong> mentioned this post:
-          <blockquote>
-            {{ mention.content.html | safe }}
-          </blockquote>
+          <blockquote>{{ mention.content.html | safe }}</blockquote>
         </li>
-      {%- endfor %}
+      {% endfor %}
     </ul>
-  {%- else %}
+  {% else %}
     <p>No webmentions yet. Be the first to mention this post!</p>
-  {%- endif %}
-  {# Get the webmentions for the current page #}
-  {%- set currentPostMentions = webmentions | webmentionsForPage -%}
-
+  {% endif %}
 </section>
