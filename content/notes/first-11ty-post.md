@@ -10,7 +10,7 @@ tags:
 
 Welcome to the weird. Welcome to my new and improving statically generated site. A few years ago I made a career change and got into IT. Many years later, I decided that my blog wasn't nerdy enough. That led me down a rabbit-hole that introduce me to SSG (Static Site Generators). These are tools that generate html to be presented as a website. There's no CMS, minimal JavaScript, and all nerd.
 
-Around that same time, I was introduced to "Digital Gardens". You can view mine [here](mike.helmers.me/garden/). This is a living webpage that will grow and evolve over time. It's been a lot of fun to build, and I'm looking forward to have it keep going.
+Around that same time, I was introduced to "Digital Gardens". You can view mine [here](https://mike.helmers.me/garden/). This is a living webpage that will grow and evolve over time. It's been a lot of fun to build, and I'm looking forward to have it keep going.
 
 ## What is it?
 
