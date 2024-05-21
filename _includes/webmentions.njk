@@ -1,0 +1,18 @@
+<section id="webmentions">
+  <h2>Webmentions</h2>
+  {%- set webmentions = webmentions | eleventyNavigation %}
+  {%- if webmentions.length > 0 %}
+    <ul>
+      {%- for mention in webmentions %}
+        <li>
+          <strong>{{ mention.author.name }}</strong> mentioned this post:
+          <blockquote>
+            {{ mention.content.html | safe }}
+          </blockquote>
+        </li>
+      {%- endfor %}
+    </ul>
+  {%- else %}
+    <p>No webmentions yet. Be the first to mention this post!</p>
+  {%- endif %}
+</section>

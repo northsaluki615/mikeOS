@@ -17,6 +17,7 @@ const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
 const embedSpotify = require("eleventy-plugin-embed-spotify");
 const markdownIt = require("markdown-it");
 const markdownItTaskCheckbox = require("markdown-it-task-checkbox");
+const Webmentions = require("eleventy-plugin-webmentions");
 
 // Export the configuration
 module.exports = function(eleventyConfig) {
@@ -32,6 +33,12 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	// Webmentions plugin
+	eleventyConfig.addPlugin(Webmentions, {
+		domain: "mike.helmers.me",
+		token: "Z-Z87D1Nn2gyY5oZveRZYg",
+	  });
 
 	// Filters and shortcodes
 	eleventyConfig.addFilter("readableDate", (dateStr, format = "dd LLLL yyyy", zone = "utc") => {
