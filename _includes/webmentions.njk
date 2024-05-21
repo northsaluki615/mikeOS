@@ -15,4 +15,7 @@
   {%- else %}
     <p>No webmentions yet. Be the first to mention this post!</p>
   {%- endif %}
+  {# Get the webmentions for the current page #}
+  {%- set currentPostMentions = webmentions | webmentionsForPage -%}
+
 </section>
