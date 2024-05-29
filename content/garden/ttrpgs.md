@@ -17,3 +17,4 @@ Old School Renaissance/Revival
 
 ## References
 https://athenaeum.antilibrari.es/t/discovering-osr-old-school-renassiance-revival-tabletop-game-books/269
+

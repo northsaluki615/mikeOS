@@ -10,4 +10,5 @@ tags:
 ---
 # RSS Links 
 - [Krebs on Security](https://krebsonsecurity.com/feed/)
-- 
+
+Discussed in further detail at [[infosec]].
