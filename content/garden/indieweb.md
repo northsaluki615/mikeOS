@@ -1,5 +1,5 @@
 ---
-title: indieweb
+title: The Indieweb
 date: 2024-05-13
 updated: 2024-05-13
 description: Notes on the indie-web

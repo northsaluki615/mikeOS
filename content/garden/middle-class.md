@@ -1,8 +1,8 @@
 ---
-title: 
+title: Middle Class
 date: 2024-05-27
 updated: 2024-05-27
-description: 
+description: Thoughts on being Middle Class
 tags:
   - seedling
 ---
