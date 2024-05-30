@@ -5,7 +5,7 @@ updated: 2024-05-29
 description: A simple way to rate things.
 tags:
   - evergreen
-  - "#life"
+  - life
 ---
 # The Three-Point Scale 
 The 3-point scale is a simple rating scheme that I helped create years ago. It's a simple way for me to classify different things in my life. It was born out of an attempt to rate beers, and not liking how untappd had their system. This is a system that lets me look at the particulars of something, and distill it down to a basic level.
@@ -18,12 +18,15 @@ The 3-point scale is a simple rating scheme that I helped create years ago. It's
 ### Diving deeper
 #### 1 Rating
 This is something that I would avoid as much as I can. 
+
 **In Beer Terms:** I would not drink this beer you handed me, even if you purchased it.
 #### 2 Rating
 Sometimes I like this, others meh.
+
 **In Beer Terms:** If you bought me this beer, I would drink it.
 #### 3 Rating
 Love it.
+
 **In Beer Terms:** Not only would I buy this beer for myself, I would probably buy this beer for others.
 
 ## Why?

@@ -1,5 +1,8 @@
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTableOfContents = require("markdown-it-table-of-contents");
+const markdownItTaskCheckbox = require("markdown-it-task-checkbox");
 
 // Official plugins
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -15,8 +18,6 @@ const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
 const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
 const embedSpotify = require("eleventy-plugin-embed-spotify");
-const markdownIt = require("markdown-it");
-const markdownItTaskCheckbox = require("markdown-it-task-checkbox");
 const Webmentions = require("eleventy-plugin-webmentions");
 
 // Export the configuration
@@ -93,7 +94,9 @@ module.exports = function(eleventyConfig) {
 
 	// Configure Markdown-it with the task checkbox plugin and HTML enabled
 	let markdownLib = markdownIt({
-		html: true // Enable HTML tags in source
+		html: true, // Enable HTML tags in source
+		linkify: true, // Autoconvert URL-like text to links
+		typographer: true // Enable smartquotes
 	}).use(markdownItTaskCheckbox, {
 		disabled: false, // Make checkboxes interactive
 		divWrap: true,   // Wrap checkbox in a div for easier styling
@@ -101,7 +104,7 @@ module.exports = function(eleventyConfig) {
 		idPrefix: 'cbx_',
 		ulClass: 'task-list',
 		liClass: 'task-list-item'
-	});
+	}).use(require('markdown-it-table-of-contents'));
 	
 	// Set the Markdown library to Eleventy's markdown library
 	eleventyConfig.setLibrary("md", markdownLib);
