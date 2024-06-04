@@ -51,6 +51,18 @@
 	--text-color: var(--accent-color);
 	--syntax-tab-size: 2;
   }
+.theme-forest {
+    --primary-color: #2d594a;   /* A dark greenish shade */
+    --secondary-color: #3b473b; /* A muted green */
+    --tertiary-color: #decabd;  /* A soft, pale, desaturated orange */
+    --quaternary-color: #a0978d; /* A grayish orange */
+    --quinary-color: #3a513f;   /* A dark moderate lime green */
+    --background-color: var(--secondary-color);
+    --text-color: var(--tertiary-color);
+    --text-color-link: var(--tertiary-color); /* Changed to tertiary for better visibility */
+    --text-color-link-active: #decabd; /* Lighter shade for active link */
+    --text-color-link-visited: #a0978d; /* Slightly different shade for visited links */
+}
 
 
 /* Global stylesheet */
