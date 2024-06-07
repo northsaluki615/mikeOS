@@ -5,31 +5,12 @@ eleventyNavigation:
   order: 4
 ---
 
-# mike now
+# /now
 
 Here's what I'm up to right now.
 
 ## 📚 currently reading 📚
 
-<section class="activity-section reading-list">
-  <div class="books-grid">
-    {% for item in readinglist %}
-      {% set currentStatus = item.events | last %}
-      {% if "started reading" in currentStatus.status %}
-        <div class="book">
-          <img src="{{ item.book.cover }}" alt="Cover of {{ item.book.title }}">
-          <div class="book-info">
-            <h3>{{ item.book.title }}</h3>
-            <p>Authors: {{ item.book.authors.join(", ") }}</p>
-            <p>Current Status: {{ currentStatus.status }} on {{ currentStatus.date | date("MMMM dd, yyyy") }}</p>
-          </div>
-        </div>
-      {% endif %}
-    {% else %}
-      <p>I'm between books right now, check back later!</p>
-    {% endfor %}
-  </div>
-</section>
 
 ## 🎧 listening 🎧
 

@@ -16,7 +16,6 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 const eleventyPluginIndieWeb = require("eleventy-plugin-indieweb");
 const activityPubPlugin = require('eleventy-plugin-activity-pub');
-const bookwyrmFeed = require('eleventy-plugin-bookwyrm');
 const embedSpotify = require("eleventy-plugin-embed-spotify");
 const Webmentions = require("eleventy-plugin-webmentions");
 
@@ -167,18 +166,7 @@ module.exports = function(eleventyConfig) {
 		}
 	  );
 	
-	// Bookwyrm plugin
-		// Pass the username and domain separately
-		// e.g. if you are p.blart@bookwyrm.social, user is p.blart,
-		// and the domain is bookwyrm.social
-	eleventyConfig.addPlugin(bookwyrmFeed, {
-		user: 'northsaluki615',
-		domain: 'bookwyrm.social',
-		dataKey: "readinglist" // Optional, defaults to "bookwyrm"
-	});
-	eleventyConfig.on('afterBuild', () => {
-		console.log(eleventyConfig.globalData.readinglist); // Adjust based on actual global data structure
-	});
+	// embed-spotify plugin
 	eleventyConfig.addPlugin(embedSpotify);
 	
 

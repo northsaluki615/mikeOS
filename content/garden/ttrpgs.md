@@ -11,6 +11,12 @@ tags:
 
 ## Dungeon and Dragons (D&D or DnD)
 
+### Campaign Settings
+#### Forgotten Realms
+
+#### [[ebberon]] 
+
+
 ## Old School Renaissance (OSR)
 
 Old School Renaissance/Revival

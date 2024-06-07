@@ -2,28 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 @import url('themes.css');
 
+
 /* Font family definitions */
-body {
-    font-family: 'Source Code Pro', monospace;
+body, .header, .nav-item a {
+  font-family: 'Roboto', sans-serif;
 }
 
-.header, .nav-item a, code, pre, .home-link, .nav-item a {
-    font-family: 'Source Code Pro', monospace;
+code, pre, body, .header, .home-link, .nav, .nav-item a {
+  font-family: 'Source Code Pro', monospace;
 }
+
 
 /* Default variables */
 :root {
-    --font-family: 'Source Code Pro', monospace;
-    --font-family-alt: 'Roboto', sans-serif;
+    --font-family: -apple-system, system-ui, sans-serif;
+    --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
     --color-gray-20: #e0e0e0;
     --color-gray-50: #C0C0C0;
     --color-gray-90: #333;
+    --text-color-link: #082840;
+    --text-color-link-active: #5f2b48;
+    --text-color-link-visited: #17050F;
     --syntax-tab-size: 2;
-    --text-color: #333;
-    --background-color: #fff;
-    --link-hover-color: #0056b3;
-    --quinary-color: #f8f9fa;
-    --secondary-color: #6c757d;
 }
 
 /* Global styles */
@@ -31,63 +31,13 @@ body {
     box-sizing: border-box;
 }
 
-/* General styles using theme variables */
 body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 40em;
-}
-
-
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
-}
-
-a {
-  color: var(--link-color);
-}
-
-a:hover {
-  color: var(--link-hover-color);
-}
-
-p, li {
-  color: var(--text-color);
-}
-
-code, pre {
-  color: var(--text-color);
-}
-
-input, button {
-  color: var(--input-text-color);
-  background-color: var(--input-background-color);
-  border-color: var(--input-border-color);
-}
-
-input:focus, button:focus {
-  border-color: var(--input-focus-border-color);
-}
-
-/* Apply the rest of your styles */
-.header {
-  border-bottom: 1px dashed var(--border-color);
-}
-
-.nav {
-  color: var(--text-color);
-}
-
-.nav-item a {
-  color: var(--text-color);
-}
-
-.nav-item a:hover {
-  color: var(--link-hover-color);
+    padding: 0;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 40em;
 }
 
 html {
@@ -146,7 +96,7 @@ header:after {
 }
 
 pre, code {
-    font-family: var(--font-family);
+    font-family: var(--font-family-monospace);
 }
 
 pre:not([class*="language-"]) {
@@ -262,7 +212,7 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-transform: capitalize;
+    text-transform: lowercase;
     font-style: italic;
 }
 
@@ -474,106 +424,226 @@ footer nav ul li a:hover {
         padding: 0 1rem;
     }
 }
+
 /* Table Styles */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1em 0;
-  background-color: var(--table-background-color);
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: var(--quinary-color);
 }
 
 table th, table td {
-  padding: 0.75em 1em;
-  border: 1px solid var(--table-border-color);
-  text-align: left;
-  color: var(--table-header-text-color);
+    padding: 0.75em 1em;
+    border: 1px solid var(--text-color);
+    text-align: left;
 }
 
 table tr:nth-child(even) {
-  background-color: var(--background-color);
+    background-color: var(--color-gray-20);
 }
 
 table th {
-  font-weight: bold;
-  background-color: var(--table-header-background-color);
-  color: var(--table-header-text-color);
-  padding: 1em;
-  border-bottom: 2px solid var(--table-border-color);
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1em;
+    border-bottom: 2px solid var(--text-color);
 }
 
 table tr:hover {
-  background-color: var(--table-header-background-color);
+    background-color: var(--color-gray-50);
 }
 
 @media only screen and (max-width: 600px) {
-  table, thead, tbody, th, td, tr {
-      display: block;
-  }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
 
-  table tr {
-      margin-bottom: 1em;
-  }
+    table tr {
+        margin-bottom: 1em;
+    }
 
-  table td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
-  }
+    table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
 
-  table td:before {
-      content: attr(data-label);
-      position: absolute;
-      left: 0;
-      width: 45%;
-      padding-left: 0.5em;
-      font-weight: bold;
-  }
+    table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 0.5em;
+        font-weight: bold;
+    }
 }
 
 /* Styling for the theme switcher dropdown */
 nav {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
-  padding: 10px 20px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 10px 20px;
 }
 
 #theme-select {
-  padding: 8px;
-  margin-left: 10px;
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  border-radius: 4px;
-  cursor: pointer;
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid var(--color-gray-50);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 #theme-select:focus {
-  outline: none;
-  border-color: var(--input-focus-border-color);
+    outline: none;
+    border-color: var(--primary-color);
 }
 
 #theme-select::-ms-expand {
-  display: none;
+    display: none;
 }
 
 #theme-select::after {
-  content: '▼';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 15px;
-  background: var(--link-hover-color);
-  cursor: pointer;
-  pointer-events: none;
-  transition: 0.25s all ease;
+    content: '▼';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    background: var(--primary-color);
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.25s all ease;
 }
 
 .icon-pixelfed {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url('/public/img/pixelfed.svg');
-  background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/public/img/pixelfed.svg');
+    background-size: cover;
+}
+
+/* Font Faces */
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-It.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-BoldIt.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-LightIt.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-MediumIt.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-SemiboldIt.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-ExtraLightIt.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro-BlackIt.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header a.home-link {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+.header .nav {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header .nav-item a {
+    font-family: 'Source Code Pro', monospace;
 }
