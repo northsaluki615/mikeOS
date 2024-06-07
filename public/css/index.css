@@ -41,8 +41,6 @@ body {
   max-width: 40em;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
 }
@@ -576,4 +574,10 @@ nav {
   height: 24px;
   background-image: url('/public/img/pixelfed.svg');
   background-size: cover;
+}
+
+/* Stop images from overflowing their containers */
+img {
+	max-width: 100%;
+	height: auto;
 }
