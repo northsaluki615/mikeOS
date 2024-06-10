@@ -280,4 +280,114 @@
   .theme-kementari .gradient-background {
     background: linear-gradient(45deg, #1f2421, #216869, #49a078, #9cc5a1, #dce1de); /* Example gradient */
   }
-  
+/* Summer theme */
+[data-theme="summer"] {
+  --coral-red: #f94144;
+  --crusta: #f3722c;
+  --tree-poppy: #f8961e;
+  --coral: #f9844a;
+  --golden-tainoi: #f9c74f;
+  --chelsea-cucumber: #90be6d;
+  --jungle-green: #43aa8b;
+  --breaker-bay: #4d908e;
+  --lynch: #577590;
+  --astral: #277da1;
+
+  --background-color: var(--chelsea-cucumber);
+  --text-color: #1e1e2e; /* Dark text color for readability */
+  --link-color: var(--coral);
+  --link-hover-color: var(--jungle-green);
+
+  --heading-color: var(--astral);
+
+  --table-background-color: var(--breaker-bay);
+  --table-header-background-color: var(--lynch);
+  --table-header-text-color: var(--astral);
+  --table-border-color: var(--astral);
+
+  --button-background-color: var(--crusta);
+  --button-text-color: var(--tree-poppy);
+  --button-hover-background-color: var(--golden-tainoi);
+
+  --input-background-color: var(--calico);
+  --input-text-color: var(--cameo);
+  --input-border-color: var(--tacao);
+  --input-focus-border-color: var(--jungle-green);
+
+  --border-color: var(--tacao);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-summer a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.theme-summer a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.theme-summer a:visited {
+  color: var(--text-color-link-visited);
+}
+
+.theme-summer h1, .theme-summer h2, .theme-summer h3, .theme-summer h4, .theme-summer h5, .theme-summer h6 {
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+/* Pine Forest theme */
+[data-theme="pine-forest"] {
+  --limed-ash: #797d62;
+  --gurkha: #9b9b7a;
+  --cameo: #d9ae94;
+  --calico: #e5c59e;
+  --peach-yellow: #f1dca7;
+  --tacao: #e4b074;
+  --antique-brass: #d08c60;
+  --cement: #997b66;
+
+  --background-color: var(--peach-yellow);
+  --text-color: #1e1e2e; /* Dark text color for readability */
+  --link-color: var(--calico);
+  --link-hover-color: var(--antique-brass);
+
+  --heading-color: var(--cement);
+
+  --table-background-color: var(--gurkha);
+  --table-header-background-color: var(--tacao);
+  --table-header-text-color: var(--cameo);
+  --table-border-color: var(--cement);
+
+  --button-background-color: var(--calico);
+  --button-text-color: var(--cameo);
+  --button-hover-background-color: var(--antique-brass);
+
+  --input-background-color: var(--peach-yellow);
+  --input-text-color: var(--calico);
+  --input-border-color: var(--gurkha);
+  --input-focus-border-color: var(--cameo);
+
+  --border-color: var(--cement);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-pine-forest a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.theme-pine-forest a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.theme-pine-forest a:visited {
+  color: var(--text-color-link-visited);
+}
+
+.theme-pine-forest h1, .theme-pine-forest h2, .theme-pine-forest h3, .theme-pine-forest h4, .theme-pine-forest h5, .theme-pine-forest h6 {
+  color: var(--heading-color);
+  font-weight: bold;
+}

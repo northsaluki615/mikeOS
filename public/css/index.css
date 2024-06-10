@@ -15,7 +15,7 @@ body {
 :root {
     --font-family: 'Source Code Pro', monospace;
     --font-family-alt: 'Roboto', sans-serif;
-    --color-gray-20: #e0e0e0;
+/*    --color-gray-20: #e0e0e0;
     --color-gray-50: #C0C0C0;
     --color-gray-90: #333;
     --syntax-tab-size: 2;
@@ -23,7 +23,7 @@ body {
     --background-color: #fff;
     --link-hover-color: #0056b3;
     --quinary-color: #f8f9fa;
-    --secondary-color: #6c757d;
+    --secondary-color: #6c757d;*/
 }
 
 /* Global styles */
