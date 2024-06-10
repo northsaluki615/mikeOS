@@ -12,7 +12,10 @@ The Indieweb is like the old internet. Untethered. Disparate. Fun. It's about be
 
 - https://indieweb.org/Getting_Started
 - https://indiewebify.me/
+## Building it out
+I recently learned about [indiemarks](https://indieweb.org/IndieMark), and build my own checklist as I [indiewebify](https://indiewebify.me/) my site.
 
+Here it is: [[indiemark]] 
 ## RelMe
 
 `rel=me` html tags show ownership of sites, and help verify that you are who you say you are.
