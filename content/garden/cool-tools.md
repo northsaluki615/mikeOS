@@ -1,8 +1,8 @@
 ---
-title: 
-date: 
+title: Cool Tools
+date: 2024-06-10
 updated: 2024-06-10
-description: 
+description: Tools I've discovered and picked up across the Internet.
 tags:
   - seedling
   - tools
