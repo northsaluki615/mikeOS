@@ -76,7 +76,6 @@ module.exports = function(eleventyConfig) {
 		  return (item.data.tags || []).includes(tag);
 		});
 	  });
-	  
 
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, { permalink: markdownItAnchor.permalink.ariaHidden({ placement: "after", class: "header-anchor", symbol: "#", ariaHidden: false }), level: [1,2,3,4], slugify: eleventyConfig.getFilter("slugify") });
@@ -89,7 +88,10 @@ module.exports = function(eleventyConfig) {
 		const options = { year: 'numeric', month: 'long', day: 'numeric' };
 		return new Date(date).toLocaleDateString("en-US", options);
 	  });
-	  
+
+	// Put robots.txt and ai.txt in the root of the output
+	eleventyConfig.addPassthroughCopy({ 'public/robots.txt': '/robots.txt' });
+	eleventyConfig.addPassthroughCopy({ 'public/ai.txt': '/ai.txt' });
 
 	// Configure Markdown-it with the task checkbox plugin and HTML enabled
 	let markdownLib = markdownIt({
@@ -107,8 +109,6 @@ module.exports = function(eleventyConfig) {
 	
 	// Set the Markdown library to Eleventy's markdown library
 	eleventyConfig.setLibrary("md", markdownLib);
-
-	
 
 	// IndieWeb and ActivityPub plugins
 	eleventyConfig.addPlugin(eleventyPluginIndieWeb, { hCard: { name: "Michael Helmers", url: "https://mike.helmers.me", email: "mikehelmers@proton.me", adr: { locality: "Madison", region: "Wisconsin", countryName: "United States" } } });
