@@ -12,6 +12,7 @@ eleventyNavigation:
 - [github](httos://github.com/northsaluki615/mikeos) - for version control
 - [DigitalOcean](https://www.digitalocean.com/) - for hosting
 - [EchoFeed](https://echofeed.app/) - for publishing to Webmention.io and Mastodon
+- [GoatCounter](https://www.goatcounter.com/) - for analytics
 
 ## Design
 
