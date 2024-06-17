@@ -4,7 +4,7 @@ date: 2024-05-27
 updated: 2024-05-27
 description: Thoughts on TTRPGs that I have
 tags:
-  - "#sprout"
+  - sprout
   - gaming
 ---
 # 🏰 TTRPG
