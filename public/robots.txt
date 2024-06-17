@@ -2,36 +2,76 @@ Host: https://mike.helmers.me
 
 Sitemap: https://mike.helmers.me/sitemap.xml
 
-User-agent: AdsBot-Google
-User-agent: Amazonbot
-User-agent: anthropic-ai
-User-agent: Applebot
-User-agent: AwarioRssBot
-User-agent: AwarioSmartBot
+# Dark Visitors Robots.txt
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/applebot-extended
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/bytespider
+
 User-agent: Bytespider
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/ccbot
+
 User-agent: CCBot
-User-agent: ChatGPT-User
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/claudebot
+
 User-agent: ClaudeBot
-User-agent: Claude-Web
-User-agent: cohere-ai
-User-agent: DataForSeoBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/diffbot
+
 User-agent: Diffbot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/facebookbot
+
 User-agent: FacebookBot
-User-agent: FriendlyCrawler
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/google-extended
+
 User-agent: Google-Extended
-User-agent: GoogleOther
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/gptbot
+
 User-agent: GPTBot
-User-agent: img2dataset
-User-agent: ImagesiftBot
-User-agent: magpie-crawler
-User-agent: Meltwater
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/omgili
+
 User-agent: omgili
-User-agent: omgilibot
-User-agent: peer39_crawler
-User-agent: peer39_crawler/1.0
-User-agent: PerplexityBot
-User-agent: PiplBot
-User-agent: scoop.it
-User-agent: Seekr
-User-agent: YouBot
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/anthropic-ai
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/claude-web
+
+User-agent: Claude-Web
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/cohere-ai
+
+User-agent: cohere-ai
 Disallow: /
