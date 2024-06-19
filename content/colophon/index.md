@@ -13,6 +13,7 @@ eleventyNavigation:
 - [DigitalOcean](https://www.digitalocean.com/) - for hosting
 - [EchoFeed](https://echofeed.app/) - for publishing to Webmention.io and Mastodon
 - [GoatCounter](https://www.goatcounter.com/) - for analytics
+- [Letterbird](https://letterbird.co/) - for contact form
 
 ## Design
 
