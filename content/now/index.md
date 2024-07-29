@@ -9,7 +9,7 @@ eleventyNavigation:
 
 My family has lost my brother Tim recently. It was unexpected, and is incredibly sad.
 
-You can learn more about Tim's life and his impact on the world [here](https://www.legacy.com/us/obituaries/legacyremembers/timothy-helmers-obituary?id=55450845).
+You can learn more about Tim's life and his impact on the world [here](https://tim.helmers.me).
 
 ## 📚 currently reading 📚
 
