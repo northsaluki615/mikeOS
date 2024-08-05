@@ -7,19 +7,20 @@ numberOfLatestPostsToShow: 3
 ---
 <div class="intro-text">
   <p>Thank you for visiting my new home on the Internet! I'm Mike Helmers, a simple man making his way through the galaxy. This site will grow as time goes on, so please check back often as it begins to take shape.</p>
+  <p>These are my scribbles, rants, and pontifations. Enjoy.</p>
 </div>
 
-{% set postsCount = collections.notes | length %}
+{% set postsCount = collections.garden | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Note{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.notes | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslist = collections.garden | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} more note{% if morePosts != 1 %}s{% endif %} can be found in <a href="/notes/">Mike's Notes</a>.</p>
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/garden/">Mike's garden</a>.</p>
 {% endif %}
 
 {# List every content page in the project #}

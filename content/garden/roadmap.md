@@ -1,11 +1,12 @@
 ---
-title: Road map
+title: road map
+description: A road map for mike.helmers.me
 date: 2024-06-19
 updated: 2024-06-19
-description: A road map for mike.helmers.me
 tags:
   - seedling
   - website
+draft: "true"
 ---
 # road map
 
