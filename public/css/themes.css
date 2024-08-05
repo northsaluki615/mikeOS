@@ -391,3 +391,17 @@
   color: var(--heading-color);
   font-weight: bold;
 }
+.temporary-message {
+  background-color: var(--link-color); /* Use link color for prominence */
+  color: var(--background-color); /* Contrast text with the background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.temporary-message a {
+  color: var(--link-hover-color); /* Ensure the link stands out */
+  text-decoration: underline;
+}

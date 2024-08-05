@@ -10,6 +10,10 @@ numberOfLatestPostsToShow: 3
   <p>These are my scribbles, rants, and pontifations. Enjoy.</p>
 </div>
 
+<div class="temporary-message">
+  <p><strong>In Memory:</strong> I recently lost my brother, Tim. You can read more about him <a href="https://mike.helmers.me/garden/my-brother-tim/">here</a>.</p>
+</div>
+
 {% set postsCount = collections.garden | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>

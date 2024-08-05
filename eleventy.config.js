@@ -114,7 +114,7 @@ module.exports = function(eleventyConfig) {
     });
 	// Registering a collection named "garden"
     eleventyConfig.addCollection("garden", function(collectionApi) {
-        return collectionApi.getFilteredByGlob("./content/garden/*.md");
+        return collectionApi.getFilteredByGlob("./content/garden/**/*.md");
     });
 	// Registering a collection named "allTags"
 	eleventyConfig.addCollection("allTags", function(collectionApi) {

@@ -7,8 +7,7 @@ tags:
   - family
   - grief
   - life
-  - evergreen
-draft:
+draft: "false"
 ---
 # My Brother, Tim
 
