@@ -9,7 +9,7 @@ tags:
   - life
 draft: "false"
 ---
-# My Brother, Tim
+# The Helmers Boys
 
 I'm the oldest of four boys.
 
@@ -22,6 +22,7 @@ This was unexpected. No one saw this coming. His loss is devastating. I'm writin
 I'm not really sure what I'm doing here, so I think I'm just going to talk about him.
 
 ---
+# Tim's Life 
 
 Born October 11, 1987, Tim was my first little brother. He would eventually grow to be the tallest Helmers boy, being my "big" little brother. In high school Tim was active in band (trombone player), helping out with theater behind the scenes, and Boy Scouts.
 
@@ -32,7 +33,7 @@ Throughout his life, he would work and numerous scout camps across the country. 
 Joining the Coast Guard, Tim eventually made his way up to a [LORAN](https://en.wikipedia.org/wiki/LORAN) station, north of Nome, Alaska. This was an incredibly remote location, that required a minimum of three plane hops, with the final one being a puddle jumper. I recall a story he shared of Tim's 21st birthday. Him and his Coastie buddies were hanging out and boxing (probably drunk), and Tim ended up breaking his nose. This required the Coast Guard to fly him Nome to see a doctor, who was out. So Tim ended up spending his 21st birthday at a bar in Nome, with a broken nose.
 
 Going off stories, my family held a remembrance festival for Tim. Several former Camp Drake staff members made the event and shared their stories. Most of them involved high school kids being dumb, and ultimately getting caught because Tim stating LOUDLY, that "Guys, I'm not sure if we should do this."
-
+# After High School
 Tim spent some more Coast Guard time in Seattle, and was eventually sent to New Orleans to assist with the BP Oil-spill clean up efforts. Tim had a job running and Arms Room. He once told me that his most exciting day was when some idiot fired a single round into the ocean, and he had to complete a ton of paperwork explaining what happened.
 
 {% image "./tim-dad-shooting.jpg", "Tim and Pat shooting some guns" %}
@@ -48,6 +49,7 @@ In Portland, he had the chance to really get know his nieces, and spend his last
 This past Christmas, in 2023, would be our last together. I will be eternally grateful to Chris for hosting that year, and my partner Alicia for coming with. This gave her and my son, James, a chance to spend some time with Tim. A chance to get to know him. He and Alicia hit it off, and one of my highlights was getting high with them and getting caught in the absurdity of a print that showed bunnies at a spa run by carrots, bathing in carrot juice. I am so happy for that memory, as Alicia and I still laugh about it.
 
 ---
+# I'll Miss Him
 
 Tim was, is, a good man. A kind man. He had a deep sense of right and wrong. He was one of the least malicious people I know. He cared deeply about his friends and family.
 
