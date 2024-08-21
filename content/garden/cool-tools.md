@@ -11,10 +11,11 @@ tags:
 A collection of things I think are neat. 
 ## Tools I Use
 
-| URL                                               | Why?                                                                                 |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [CyberChef]()                                     | The Cyber Swiss Army Knife. Can do encoding, decoding, hashing, and more! All local. |
-| [tabspace](https://github.com/jackyzha0/tabspace) | A neat utility to take notes and have them stored locally in a markdown format.      |
+| URL                                                         | Why?                                                                                 |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [CyberChef]()                                               | The Cyber Swiss Army Knife. Can do encoding, decoding, hashing, and more! All local. |
+| [tabspace](https://github.com/jackyzha0/tabspace)           | A neat utility to take notes and have them stored locally in a markdown format.      |
+| [Bash Prompt Generator](https://bash-prompt-generator.org/) | Create your own prompts easily                                                       |
 See also, my [/uses](https://mike.helmers.me/uses) page.
 ## Icons 
 [[icons]]  
