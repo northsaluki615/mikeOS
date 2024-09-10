@@ -1,0 +1,1 @@
+https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/
