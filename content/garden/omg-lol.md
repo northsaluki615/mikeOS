@@ -1,8 +1,8 @@
 ---
 title: omg.lol
-date: 
+date: 2024-09-20
 updated: 2024-09-20
-description: 
+description: A cool place I found and now hang out at.
 tags:
   - seedling
   - sprout
