@@ -34,14 +34,16 @@ Throughout his life, he would work and numerous scout camps across the country. 
 Joining the Coast Guard, Tim eventually made his way up to [Loran Station Port Clarence](https://www.alaskahandbook.com/places/us-coast-guard-loran-station-port-clarence/). A [LORAN](https://en.wikipedia.org/wiki/LORAN) station, north of Nome, Alaska. This was an incredibly remote location, that required a minimum of three plane hops, with the final one being a puddle jumper. I recall a story he shared of Tim's 21st birthday. Him and his Coastie buddies were hanging out and boxing (probably drunk), and Tim ended up breaking his nose. This required the Coast Guard to fly him Nome to see a doctor, who was out. So Tim ended up spending his 21st birthday at a bar in Nome, with a broken nose.
 
 Going off stories, my family held a remembrance festival for Tim. Several former Camp Drake staff members made the event and shared their stories. Most of them involved high school kids being dumb, and ultimately getting caught because Tim stating LOUDLY, that "Guys, I'm not sure if we should do this."
+
 # After High School
+
 Tim spent some more Coast Guard time in Seattle, and was eventually sent to New Orleans to assist with the BP Oil-spill clean up efforts. Tim had a job running and Arms Room. He once told me that his most exciting day was when some idiot fired a single round into the ocean, and he had to complete a ton of paperwork explaining what happened.
 
 {% image "./tim-dad-shooting.jpg", "Tim and Pat shooting some guns" %}
 
 Once out of the Coast Guard, Tim attended Trinidad State College, where he earned an Associates Degree in Gunsmithing. My parents and I were able to go out and watch him graduate. Tim even took us to a shooting range where we had the opportunity to shoot some of the guns he built.
 
-{% image "./tim-mom-associate-grad.png", "Tim and Mom" %}
+{% image "./tim-mom-associate-grad.jpg", "Tim and Mom" %}
 
 After puttering around out west for a bit, Tim eventually made his way back to Illinois, attending George Williams College of Aurora University graduating a Bachelor's Degree in Parks and Recreation. Armed with this degree, Tim became a District Executive with the Boy Scouts of America, out in rural Idaho. Like many others, Tim lost this position during the 2020 Covid-19 Pandemic, bring him to Portland, OR.
 
