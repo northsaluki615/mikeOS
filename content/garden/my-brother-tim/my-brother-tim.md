@@ -22,6 +22,7 @@ This was unexpected. No one saw this coming. His loss is devastating. I'm writin
 I'm not really sure what I'm doing here, so I think I'm just going to talk about him.
 
 ---
+
 # Tim's Life 
 
 Born October 11, 1987, Tim was my first little brother. He would eventually grow to be the tallest Helmers boy, being my "big" little brother. In high school Tim was active in band (trombone player), helping out with theater behind the scenes, and Boy Scouts.
