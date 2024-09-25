@@ -1,6 +1,6 @@
 ---
 title: Grandma Lori's Porchetta
-date: 
+date: 2024-01-25
 updated: 2024-05-17
 description: A delicious and flavorful pork tenderloin recipe from Grandma Lori
 tags:
