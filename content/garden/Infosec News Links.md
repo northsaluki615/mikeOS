@@ -1,6 +1,6 @@
 ---
 title: Infosec News Links
-date: 
+date: 2024-05-17
 updated: 2024-05-17
 description: A list of infosec RSS feeds I like
 tags:
