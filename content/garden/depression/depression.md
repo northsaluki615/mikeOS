@@ -13,7 +13,7 @@ tags:
 
 ### From Dan Harmon
 
-{% image "./dan-harmon-on-depression.png", "A reddit screenshot of Dan's tweet." %}
+{% image "./dan-harmon-on-depression.png", "A screenshot of Dan's tweet." %}
 
 1. Admit and accept what is happening.
 2. Try to remind yourself, over and over, that feelings are real, but they aren't reality.
@@ -23,4 +23,4 @@ tags:
 
 ## Help 
 
-Reach out to those you [[love]].
+Reach out to those you [love](https://mike.helmers.me/garden/love/).

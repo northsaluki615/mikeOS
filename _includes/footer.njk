@@ -69,22 +69,43 @@
 
     <!-- GoatCounter Script -->
     <script>
+
+        var counterEl = document.querySelector("#visitor-counter");
+
+        // Display a loading or fallback message
+        if (counterEl) {
+            counterEl.innerHTML = '<span style="font-size: 14px; color: #666;">Loading views...</span>';
+        }
+
         var t = setInterval(function () {
             if (window.goatcounter && window.goatcounter.visit_count) {
                 clearInterval(t);
-                window.goatcounter.visit_count({
-                    append: "#visitor-counter",
-                    type: "svg",
-                    no_branding: false,
-                    style: `
-                        #gcvc-border { fill: transparent; stroke: #000; }
-                        #gcvc-for { fill: #000; font-size: 14px; }
-                        #gcvc-views { fill: #000; font-size: 16px; font-weight: bold; }
-                        #gcvc-by { fill: #000; font-size: 12px; }
-                    `,
-                });
+
+                try {
+                    // Attempt to count visitors
+                    window.goatcounter.visit_count({
+                        append: "#visitor-counter",
+                        type: "svg",
+                        no_branding: true,
+                        path: window.location.pathname.replace(/\/$/, ""), // Normalize path
+                        style: `
+                            #gcvc-border { fill: transparent; stroke: #000; }
+                            #gcvc-for { fill: #000; font-size: 14px; }
+                            #gcvc-views { fill: #000; font-size: 16px; font-weight: bold; }
+                            #gcvc-by { fill: #000; font-size: 12px; }
+                        `,
+                    });
+
+                } catch (err) {
+                    // If an error occurs, display a fallback
+                    counterEl.innerHTML = 
+                        '<span style="font-size: 14px; color: #666;">No views yet</span>';
+                    console.error("Error loading GoatCounter stats:", err);
+                }
             }
         }, 100);
+
+
     </script>
     <script
         data-goatcounter="https://mikesgoat.goatcounter.com/count"
