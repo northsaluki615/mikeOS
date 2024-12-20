@@ -1,0 +1,50 @@
+{
+    "title": "Best of 2024",
+    "description": "Mike's favorite films of 2024.",
+    "list_url": "https://boxd.it/BmH4I",
+    "movies": [
+      {
+        "position": 1,
+        "name": "Dune: Part Two",
+        "year": 2024,
+        "url": "https://boxd.it/pUfA",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/1/8/5/8/7/7/8/dune-part-two-2024-1200-1200-675-675-crop-000000.jpg"
+      },
+      {
+        "position": 2,
+        "name": "Furiosa: A Mad Max Saga",
+        "year": 2024,
+        "url": "https://boxd.it/tABk",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/1/7/4/4/3/9/7/furiosa-2024-1200-1200-675-675-crop-000000.jpg"
+      },
+      {
+        "position": 3,
+        "name": "Civil War",
+        "year": 2024,
+        "url": "https://boxd.it/z1jW",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/2/0/2/9/9/9/8/civil-war-2024-1200-1200-675-675-crop-000000.jpg"
+      },
+      {
+        "position": 4,
+        "name": "Deadpool & Wolverine",
+        "year": 2024,
+        "url": "https://boxd.it/jq8s",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/1/5/7/8/9/7/4/deadpool-wolverine-2024-1200-1200-675-675-crop-000000.jpg"
+      },
+      {
+        "position": 5,
+        "name": "Alien: Romulus",
+        "year": 2024,
+        "url": "https://boxd.it/zGqO",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/2/1/0/5/4/2/7/alien-romulus-2024-1200-1200-675-675-crop-000000.jpg"
+      },
+      {
+        "position": 6,
+        "name": "The Penguin",
+        "year": 2024,
+        "url": "https://boxd.it/QkIU",
+        "image_url": "https://a.ltrbxd.com/resized/film-poster/1/7/1/9/3/3/3/the-penguin-2024-1200-1200-675-675-crop-000000.jpg"
+      }
+    ]
+  }
+  

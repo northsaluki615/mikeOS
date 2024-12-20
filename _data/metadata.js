@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "mikeOS",
 	url: "https://mike.helmers.me/",
 	language: "en",

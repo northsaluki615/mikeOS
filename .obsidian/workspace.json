@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b40d4c47d2f1d843",
+        "id": "0adf59c4fd77950b",
         "type": "tabs",
         "children": [
           {
-            "id": "3f06532173187641",
+            "id": "079cacf287ef461b",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -35,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -88,7 +96,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -99,7 +109,9 @@
               "state": {
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -110,7 +122,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -138,44 +154,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85124d62ad55010b",
+  "active": "079cacf287ef461b",
   "lastOpenFiles": [
-    "content/outbox/outbox_page.njk",
-    "content/outbox/outbox.njk",
-    "content/outbox",
-    "_static/mike.json",
-    "_static/mike",
-    "_static/404.html",
-    "_static/index.html",
-    "_static/sitemap.xml",
-    "_static/outbox",
-    "_static/outbox_page",
-    "_static/theArchives/the-story-of-james/index.html",
-    "content/wiki/🧑‍💻 hacking/pwnagotchi.md",
-    "content/wiki/cybersecurity/test.md",
-    "content/wiki/cybersecurity/networksecurity.md",
-    "content/wiki/cybersecurity/ABAD COPY.md",
-    "content/wiki/linux/popos.md",
-    "content/wiki/linux/networksecurityCOPY.md",
-    "content/wiki/self-hosted/pihole.md",
-    "content/wiki/📱 Tech/IoT.md",
-    "content/wiki/📱 Tech/omg.lol.md",
-    "content/wiki/📱 Tech/EdgeRouter Lite.md",
-    "content/wiki/📱 Tech/CHERRY MX BOARD 2.0S.md",
-    "content/wiki/💻 self-hosted/kill-the-newsletter.md",
-    "content/wiki/💻 self-hosted/indieweb.md",
-    "content/wiki/💻 self-hosted/Pi-hole.md",
-    "content/wiki/💻 self-hosted/Immich.md",
-    "content/wiki/💻 self-hosted/Eleventy.md",
-    "content/wiki/🍲 Recipe/Grandma Lori's Porchetta.md",
-    "content/wiki/🧘‍♂️ Philosophy/How to Date.md",
-    "content/wiki/🧬 Life/🛏️ Bedtime for James.md",
-    "content/wiki/🧬 Life/🍃 My Digital Garden.md",
-    "content/wiki/🧬 Life/Exercise.md",
-    "content/wiki/🎮 Gaming/Dwarf Fortress/⛰️ Dwarf Fortress Tips.md",
-    "content/wiki/🎮 Gaming/Dwarf Fortress/FlowchartDF.png",
-    "content/wiki/🎮 Gaming/The Fall of Malevelon Creek.md",
-    "content/wiki/🎮 Gaming/Minecraft.md",
-    "content/wiki/🎮 Gaming/Linux Gaming.md"
+    "content/garden/best-of-2024/best-of-2024.md",
+    "_static/**/**/fonts/SourceCodePro-SemiboldIt.otf",
+    "_static/**/**/img/pixelfed.svg",
+    "_static/**/**/img/pixelfed.png",
+    "_static/**/**/img/favicon.ico",
+    "_static/**/**/fonts/SourceCodePro-MediumIt.otf",
+    "_static/**/**/fonts/SourceCodePro-Light.otf",
+    "_static/**/**/fonts/SourceCodePro-Regular.otf",
+    "_static/**/**/fonts/SourceCodePro-LightIt.otf",
+    "_static/**/**/fonts/SourceCodePro-Semibold.otf",
+    "_static/**/**/fonts/SourceCodePro-Medium.otf",
+    "_static/**/**/fonts/SourceCodePro-It.otf",
+    "_static/**/**/fonts/SourceCodePro-ExtraLightIt.otf",
+    "content/garden/state-of-mike-2024/state-of-mike-2024.md",
+    "_static/img/xnQ5xBtOaY-150.avif",
+    "_static/img/xnQ5xBtOaY-150.webp",
+    "_static/img/xnQ5xBtOaY-150.png",
+    "_static/img/OY8Dxoewkp-150.jpeg",
+    "_static/img/OY8Dxoewkp-150.webp",
+    "_static/img/OY8Dxoewkp-150.avif",
+    "_static/img/-4E-yahE58-150.avif",
+    "_static/img/-4E-yahE58-150.jpeg",
+    "content/garden/best-of-2024.md",
+    "node_modules/string-replace-async/readme.md",
+    "node_modules/eleventy-plugin-embed-twitch/README.md",
+    "node_modules/eleventy-plugin-embed-everything/README.md",
+    "node_modules/eleventy-plugin-embed-instagram/README.md",
+    "node_modules/eleventy-plugin-embed-openstreetmap/README.md",
+    "node_modules/eleventy-plugin-embed-soundcloud/README.md",
+    "node_modules/eleventy-plugin-embed-ted/README.md",
+    "node_modules/lite-youtube-embed/readme.md",
+    "node_modules/eleventy-plugin-embed-twitter/README.md",
+    "node_modules/eleventy-plugin-youtube-embed/README.md",
+    "node_modules/eleventy-plugin-embed-tiktok/README.md",
+    "node_modules/eleventy-plugin-vimeo-embed/README.md",
+    "content/garden/my-brother-tim/my-brother-tim.md",
+    "content/garden/omg-lol.md",
+    "content/garden/middle-class.md",
+    "content/garden/privacy.md",
+    "content/garden/roadmap.md",
+    "content/garden/threepointscale.md",
+    "content/garden/ttrpgs.md",
+    "content/garden/smart-home.md",
+    "content/garden/indiemark.md",
+    "content/garden/infosec.md"
   ]
 }

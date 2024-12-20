@@ -9,10 +9,11 @@ numberOfLatestPostsToShow: 3
   <p>Thank you for visiting my new home on the Internet! I'm Mike Helmers, a simple man making his way through the galaxy. This site will grow as time goes on, so please check back often as it begins to take shape.</p>
   <p>These are my scribbles, rants, and pontifations. Enjoy.</p>
 </div>
-
+{# 
 <div class="temporary-message">
   <p><strong>In Memory:</strong> I recently lost my brother, Tim. You can read more about him <a href="https://mike.helmers.me/garden/my-brother-tim/">here</a>.</p>
 </div>
+#}
 
 {% set postsCount = collections.garden | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
