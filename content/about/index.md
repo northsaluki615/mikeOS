@@ -10,28 +10,28 @@ eleventyNavigation:
 
 {% image "./mike-helmers-profile.jpg", "Mike, in a favorite shirt." %}
 
-Living in Madison, WI with my son, my partner, and my dog. I like to write about my experiences, my thoughts, and my feelings. I'm a fan of the [IndieWeb](https://indieweb.org/), and I'm working on making my site more interactive and more connected.
+Hey, I'm Mike! I live in Madison, WI, with my son, my partner, and our dog. This site is my little corner of the web, where I write about what I’m learning, what I’m thinking, and whatever I feel like sharing. I'm really into the [IndieWeb](https://indieweb.org/), and I’m always tinkering with ways to make this site more connected and interactive.
 
-### Professional Journey
+### My Work Life
 
-My career in cybersecurity began with a deep fascination for technology and security. Over the years, I have honed my skills in identifying vulnerabilities, implementing robust security measures, and ensuring compliance with industry standards.
+I work in cybersecurity, where I get to combine my love for problem-solving with the challenge of keeping systems secure. From spotting vulnerabilities to implementing strong defenses, I take pride in making tech a safer space for everyone.
 
-### Academic Pursuits
+### Learning & Growing
 
-I am pursuing a graduate degree in Cybersecurity, where I delve into advanced topics such as threat analysis, network security, and cyber defense strategies. My academic journey complements my professional experience, equipping me with cutting-edge knowledge and practical skills to tackle emerging cyber threats.
+I recently earned my Masters Degree, diving deep into cybersecurity. Think stuff like network security, threat analysis, and strategies to stay one step ahead of cyberattacks. Balancing school and work is a challenge, but it keeps me sharp and up-to-date in a field that’s constantly evolving.
 
-### Personal Interests
+### My Hobbies
 
-When I'm not immersed in the world of cybersecurity, you can find me exploring the realms of fantasy as a dedicated Dungeons & Dragons enthusiast. This hobby not only fuels my creativity but also enhances my problem-solving abilities and teamwork skills.
+When I’m not buried in cybersecurity, I’m probably at a table (or online) playing Dungeons & Dragons. It’s more than just a game for me—it’s a creative outlet and a way to sharpen my problem-solving and teamwork skills while having a blast.
 
-### Projects and Initiatives
+### What I’m Working On
 
-I am actively involved in several projects that align with my professional and personal interests:
+I’ve always got a few projects in the works, blending my interests in tech and creativity:
 
-- **Smart Home Automation:** Building a connected and secure smart home using Home Assistant and Amazon's Alexa.
-- **Web Development:** Creating and maintaining a personal website with custom CSS themes, including Latte, Macchiato, Frappe, Mocha, Forest, and Druid.
-- **Cybersecurity Research:** Conducting in-depth analyses of security and compliance for Microsoft 365 Government G3 vs. G5 licenses.
+- **Smart Home Setup:** Building a connected (and secure) smart home using Home Assistant and Alexa.
+- **Personal Web Projects:** Designing my site with custom CSS themes—Latte, Macchiato, Frappe, Mocha, Forest, and Druid.
+- **Cybersecurity Research:** Analyzing Microsoft 365 Government G3 vs. G5 licenses to figure out the best options for compliance and security.
 
 ---
 
-Thank you for visiting my website. Feel free to explore and connect with me to discuss cybersecurity, web development, or just share your latest D&D campaign stories!
+Thanks for stopping by! Feel free to poke around, reach out to chat about cybersecurity, share your D&D adventures, or nerd out over web design. Always happy to connect!
