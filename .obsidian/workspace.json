@@ -11,10 +11,14 @@
             "id": "079cacf287ef461b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/garden/roadmap.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "roadmap"
             }
           }
         ]
@@ -156,6 +160,10 @@
   },
   "active": "079cacf287ef461b",
   "lastOpenFiles": [
+    "content/garden/indiemark.md",
+    "content/garden/grandma-lori-porchetta.md",
+    "content/garden/cool-tools.md",
+    "content/garden/state-of-mike-2024/state-of-mike-2024.md",
     "content/garden/best-of-2024/best-of-2024.md",
     "_static/**/**/fonts/SourceCodePro-SemiboldIt.otf",
     "_static/**/**/img/pixelfed.svg",
@@ -169,7 +177,6 @@
     "_static/**/**/fonts/SourceCodePro-Medium.otf",
     "_static/**/**/fonts/SourceCodePro-It.otf",
     "_static/**/**/fonts/SourceCodePro-ExtraLightIt.otf",
-    "content/garden/state-of-mike-2024/state-of-mike-2024.md",
     "_static/img/xnQ5xBtOaY-150.avif",
     "_static/img/xnQ5xBtOaY-150.webp",
     "_static/img/xnQ5xBtOaY-150.png",
@@ -198,8 +205,6 @@
     "content/garden/roadmap.md",
     "content/garden/threepointscale.md",
     "content/garden/ttrpgs.md",
-    "content/garden/smart-home.md",
-    "content/garden/indiemark.md",
-    "content/garden/infosec.md"
+    "content/garden/smart-home.md"
   ]
 }

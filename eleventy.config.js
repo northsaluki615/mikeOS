@@ -24,7 +24,7 @@ export default async function(eleventyConfig) {
   
 	// Passthrough copy
 	eleventyConfig.addPassthroughCopy({
-	  "./public/": "/**/**/",
+	  "./public/**/*": "/",
 	  "./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 	eleventyConfig.addPassthroughCopy({"./public/**/*": "/"});
@@ -39,7 +39,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss.default);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight.default, { preAttributes: { tabindex: 0 } });
 	eleventyConfig.addPlugin(pluginNavigation.default);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin.default);
 	eleventyConfig.addPlugin(pluginBundle.default);
 	eleventyConfig.addPlugin(embeds.default);
 	//eleventyConfig.addPlugin(UpgradeHelper.default);
@@ -74,7 +74,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addFilter("getAllTags", (collection) => {
 		let tagSet = new Set();
 		for (let item of collection) {
-		(item.data.tags || []).forEach((tag) => tagSet.add(tag));
+		tagSet = new Set([...tagSet, ...(item.data.tags || [])]);
 		}
 		return Array.from(tagSet);
 	});

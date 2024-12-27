@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li>
-                <a rel="me" href="https://infosec.exchange/@northsaluki615">
+                <a rel="me" href="https://social.lol/@b00ksc0ut">
                     <i class="fa-brands fa-mastodon"></i>
                 </a>
             </li>
@@ -39,23 +39,18 @@
     </div>
     {% endif %}
 
-    <!-- Inline Content Container -->
-    <div class="footer-inline-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-        <!-- Visitor Counter -->
+    <div class="footer-inline-container">
         <div id="visitor-counter"></div>
-
-        <!-- People Pledge Badge -->
         <a href="https://people.pledge.party/" target="_blank">
             <img
                 src="https://people.pledge.party/badges/people_pledge_badge_party_pink_cream.svg"
                 alt="People Pledge Badge"
-                style="width: 150px; height: auto;"
+                class="people-pledge-badge"
             />
         </a>
     </div>
 
-    <!-- Single-line Attribution -->
-    <p style="text-align: center; font-size: 0.9em; margin-top: 20px;">
+    <p class="footer-attribution">
         mikeOS by 
         <a href="https://mike.helmers.me/about" rel="author">mike helmers</a>
         is licensed under 
@@ -67,27 +62,17 @@
         on <time datetime="2024-12-17T16:42:30.993Z">2024-12-17</time>.
     </p>
 
-    <!-- GoatCounter Script -->
     <script>
-
         var counterEl = document.querySelector("#visitor-counter");
-
-        // Display a loading or fallback message
-        if (counterEl) {
-            counterEl.innerHTML = '<span style="font-size: 14px; color: #666;">Loading views...</span>';
-        }
-
         var t = setInterval(function () {
             if (window.goatcounter && window.goatcounter.visit_count) {
                 clearInterval(t);
-
                 try {
-                    // Attempt to count visitors
                     window.goatcounter.visit_count({
                         append: "#visitor-counter",
                         type: "svg",
                         no_branding: true,
-                        path: window.location.pathname.replace(/\/$/, ""), // Normalize path
+                        path: window.location.pathname.replace(/\/$/, ""),
                         style: `
                             #gcvc-border { fill: transparent; stroke: #000; }
                             #gcvc-for { fill: #000; font-size: 14px; }
@@ -95,17 +80,13 @@
                             #gcvc-by { fill: #000; font-size: 12px; }
                         `,
                     });
-
                 } catch (err) {
-                    // If an error occurs, display a fallback
                     counterEl.innerHTML = 
-                        '<span style="font-size: 14px; color: #666;">No views yet</span>';
+                        '<span class="fallback-message">No views yet</span>';
                     console.error("Error loading GoatCounter stats:", err);
                 }
             }
         }, 100);
-
-
     </script>
     <script
         data-goatcounter="https://mikesgoat.goatcounter.com/count"
