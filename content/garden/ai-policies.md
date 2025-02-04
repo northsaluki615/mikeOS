@@ -2,7 +2,7 @@
 title: ai-policies
 description: A rant on AI Policies
 date: 2024-05-24
-draft: "false"
+draft: false
 tags:
   - ai
   - policy

@@ -6,7 +6,7 @@ description: Linux Tools, Tips, and Resources
 tags:
   - seedling
   - linux
-draft: "false"
+draft: false
 ---
 # Linux 
 
