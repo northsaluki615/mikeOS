@@ -7,7 +7,7 @@ tags:
   - family
   - grief
   - life
-draft: "false"
+draft: false
 ---
 # The Helmers Boys
 
