@@ -13,7 +13,6 @@ You can learn more about Tim's life and his impact on the world [here](https://t
 
 ## 📚 currently reading 📚
 
-
 ## 🎧 listening 🎧
 
 Currently vibing to Gary Clark Jr. You can listen along here:
@@ -26,7 +25,7 @@ Binge-watching **The Mandalorian** on Disney+. Absolutely love the Star Wars uni
 
 ## 🍻 drinking 🍻
 
-Exploring the world of craft beers. The [Local Craft IPA](#) has been a recent favorite.
+Currently enjoying some homebrewed Badger Scotch Ale. Currently served on tap at Hasbeen's Pub - Madison.
 
 ## 🎮 playing 🎮
 

@@ -1,8 +1,6 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: ⚒️ colophon
-  order: 6
 ---
 # /colophon
 

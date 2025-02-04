@@ -1,8 +1,6 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: 🛠️ uses
-  order: 5
 ---
 
 # /uses 🛠️
