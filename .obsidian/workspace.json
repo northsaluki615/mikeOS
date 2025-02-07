@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/garden/get-to-know-my-blog.md",
+                "file": "content/slash/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "get-to-know-my-blog"
+              "title": "about"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -160,8 +161,19 @@
   },
   "active": "e100dd55aeaf7404",
   "lastOpenFiles": [
-    "content/garden/state-of-mike-2024/state-of-mike-2024.md",
+    "_static/slash/blog-roll/index.html",
+    "_static/slash/blog-roll",
+    "_static/css/prism-okaidia.css",
+    "content/slash/blog-roll.md",
+    "content/slash/about.md",
+    "content/slash/colophon.md",
+    "content/slash/contact.md",
+    "content/slash/index.md",
+    "content/slash/uses.md",
+    "content/slash/now.md",
+    "content/slash/mike-helmers-profile.jpg",
     "content/garden/get-to-know-my-blog.md",
+    "content/garden/state-of-mike-2024/state-of-mike-2024.md",
     "_static/garden/get-to-know-my-blog/index.html",
     "_static/garden/get-to-know-my-blog",
     "content/garden/on-identifying-problems.md",
@@ -182,8 +194,6 @@
     "_static/**/**/fonts/SourceCodePro-Light.otf",
     "_static/**/**/fonts/SourceCodePro-Regular.otf",
     "_static/**/**/fonts/SourceCodePro-LightIt.otf",
-    "_static/**/**/fonts/SourceCodePro-Semibold.otf",
-    "_static/**/**/fonts/SourceCodePro-Medium.otf",
     "_static/img/xnQ5xBtOaY-150.avif",
     "_static/img/xnQ5xBtOaY-150.webp",
     "_static/img/xnQ5xBtOaY-150.png",
@@ -191,19 +201,11 @@
     "_static/img/OY8Dxoewkp-150.webp",
     "_static/img/OY8Dxoewkp-150.avif",
     "_static/img/-4E-yahE58-150.avif",
-    "_static/img/-4E-yahE58-150.jpeg",
     "content/garden/best-of-2024.md",
     "node_modules/string-replace-async/readme.md",
     "node_modules/eleventy-plugin-embed-twitch/README.md",
     "node_modules/eleventy-plugin-embed-everything/README.md",
     "node_modules/eleventy-plugin-embed-instagram/README.md",
-    "node_modules/eleventy-plugin-embed-openstreetmap/README.md",
-    "node_modules/eleventy-plugin-embed-soundcloud/README.md",
-    "node_modules/eleventy-plugin-embed-ted/README.md",
-    "node_modules/lite-youtube-embed/readme.md",
-    "node_modules/eleventy-plugin-embed-twitter/README.md",
-    "node_modules/eleventy-plugin-youtube-embed/README.md",
-    "node_modules/eleventy-plugin-embed-tiktok/README.md",
-    "node_modules/eleventy-plugin-vimeo-embed/README.md"
+    "node_modules/eleventy-plugin-embed-openstreetmap/README.md"
   ]
 }

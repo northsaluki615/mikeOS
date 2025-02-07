@@ -10,7 +10,8 @@ eleventyNavigation:
 Here's my collection of slash pages. These are pages that are not part of the main navigation, but are still important to me.
 
 - [📌 now](/slash/now)
+- [📜 blog roll](/slash/blog-roll)
 - [⚒️ colophon](/slash/colophon)
 - [🤙 contact](/slash/contact)
-- [📜 sitemap](/slash/sitemap)
+- [🗺️ sitemap](/slash/sitemap)
 - [🛠️ uses](/slash/uses)
