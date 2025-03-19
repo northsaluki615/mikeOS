@@ -6,6 +6,6 @@ export default {
 	author: {
 		name: "Mike Helmers",
 		email: "mikehelmers@proton.me",
-		url: "https://mike.helmers./about-me/"
+		url: "https://mike.helmers.me/about-me/"
 	}
 }

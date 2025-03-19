@@ -2245,11 +2245,6 @@
 │   │   ├── package.json
 │   │   ├── README.md
 │   │   └── screenshot.png
-│   ├── eleventy-plugin-webmentions
-│   │   ├── filters.js
-│   │   ├── package.json
-│   │   ├── README.md
-│   │   └── webmentions.js
 │   ├── encodeurl
 │   │   ├── HISTORY.md
 │   │   ├── index.js
