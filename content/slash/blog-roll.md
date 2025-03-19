@@ -23,6 +23,8 @@ Blogs that I like.
 - <https://yordi.me/feed/>
 - <https://www.fromjason.xyz/p/freelance/feed/feed.xml>
 - <https://www.fromjason.xyz/notebook/feed/feed.xml>
+- https://flamedfury.com/feed.xml
+- https://www.coryd.dev/feeds/links.xml
 
 ## Web Comics
 
