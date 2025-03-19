@@ -13,7 +13,7 @@ updated: 2024-08-05
 ---
 # AI Policies
 
-As some of you know, I work in [cybersecurity](https://mike.helmers.me/garden/cybersecurity). AI news and headlines are sweeping the world, and have gotten C-Suite types up in a tizzy. What are the security ramifications of this? Well, there's a lot to consider. Personally, impact to the workforce and privacy violations are my biggest concerns. But as I've been playing with different AI tools, I feel that most concerns, at least so far, aren't that crazy. They seem to be different flavors of traditional technology concerns. What drives me ***crazy***, is that folx want to act as if these are new concerns. They're not.
+As some of you know, I work in [cybersecurity](https://mike.helmers.me/blog/cybersecurity). AI news and headlines are sweeping the world, and have gotten C-Suite types up in a tizzy. What are the security ramifications of this? Well, there's a lot to consider. Personally, impact to the workforce and privacy violations are my biggest concerns. But as I've been playing with different AI tools, I feel that most concerns, at least so far, aren't that crazy. They seem to be different flavors of traditional technology concerns. What drives me ***crazy***, is that folx want to act as if these are new concerns. They're not.
 I'm all for creating policies that protect you and/or your organization, but make sure it actually has an impact.
 
 ## What is AI?

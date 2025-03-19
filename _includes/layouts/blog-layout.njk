@@ -4,8 +4,8 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 
-<div class="garden-container">
-  <header class="garden-header">
+<div class="blog-container">
+  <header class="blog-header">
     <h1>{{ title }}</h1>
     <p class="meta">Created on {{ page.date | readableDate("MMMM dd, yyyy", "utc") }}</p>
     <ul class="post-metadata">
@@ -16,7 +16,7 @@ layout: layouts/base.njk
     </ul>
   </header>
 
-  <article class="garden-content">
+  <article class="blog-content">
     {{ content | safe }}
   </article>
 
@@ -32,10 +32,10 @@ layout: layouts/base.njk
     </section>
   {% endif %}
 
-  <footer class="garden-footer">
+  <footer class="blog-footer">
     <nav>
-      <ul class="garden-links">
-        <li><a href="/garden/">All garden Articles</a></li>
+      <ul class="blog-links">
+        <li><a href="/blog/">All blog Articles</a></li>
         <li><a href="/tags/">Tags Index</a></li>
       </ul>
     </nav>

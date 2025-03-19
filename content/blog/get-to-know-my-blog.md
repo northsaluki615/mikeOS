@@ -51,7 +51,7 @@ I usually let it simmer. Mostly because I never finish writing in one go.
 
 ### What's your favorite post on your blog?
 
-Of my current site, [My Brother, Tim](https://mike.helmers.me/garden/my-brother-tim/) is the favorite post. I'm proud of what I wrote, and I hope that it's something he would enjoy.
+Of my current site, [My Brother, Tim](https://mike.helmers.me/blog/my-brother-tim/) is the favorite post. I'm proud of what I wrote, and I hope that it's something he would enjoy.
 
 ### Any future plans for your blog? Maybe a redesign, a move to another platform, or adding a new feature?
 

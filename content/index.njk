@@ -5,27 +5,44 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
-<div class="intro-text">
-  <p>Thank you for visiting my new home on the Internet! I'm Mike Helmers, a simple man making his way through the galaxy. This site will grow as time goes on, so please check back often as it begins to take shape.</p>
+
+<h1>🍃 Mike's Digital Garden 🍃</h1>
+<p>Welcome to my digital garden! Why do I call it this instead of a blog? I want this site to feel more natural and fun. It's not meant for commodity. This is where I plant seeds of ideas, nurture them, and watch them grow. I'm always learning and experimenting, so this space is a reflection of that journey. I hope you find something interesting or useful here.</p>
+<blockquote>
+  <p>"Gardens and parks lie between farmland and wilderness. The garden is farmland that delights the senses, designed for delight rather than commodity."</p>
+  <cite><a href="http://www.eastgate.com/garden/Gardens.html">Read more at Eastgate</a></cite>
+</blockquote>
   <p>These are my scribbles, rants, and pontifations. Enjoy.</p>
-</div>
+<h2>Digital Garden Terminology</h2>
+<p>This is heavily borrowed from <a href="https://maggieappleton.com">Maggie Appleton's</a> website. I've adopted a similar system to help me keep track of the ideas I'm exploring.</p>
+<ul>
+<li><strong>🌱 Seedling</strong>: A new idea or concept that I'm exploring.</li>
+<li><strong>🌿 Sprout</strong>: A seedling that has started to grow and take shape.</li>
+<li><strong>🌳 Evergreen</strong>: A fully-formed idea that I've written about in detail.</li>
+</ul>
+
+As of now, I'm classifying articles/posts/notes in the following way:
+
+- Blog Posts: These are more formal articles that I've written. They're usually longer and more thought-out.
+- Notes: These are shorter, more informal posts. They're usually quick thoughts or ideas that I've jotted down. These are less likely to we well though out.
+
 {# 
 <div class="temporary-message">
-  <p><strong>In Memory:</strong> I recently lost my brother, Tim. You can read more about him <a href="https://mike.helmers.me/garden/my-brother-tim/">here</a>.</p>
+  <p><strong>In Memory:</strong> I recently lost my brother, Tim. You can read more about him <a href="https://mike.helmers.me/blog/my-brother-tim/">here</a>.</p>
 </div>
 #}
 
-{% set postsCount = collections.garden | length %}
+{% set postsCount = collections.blog | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.garden | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslist = collections.blog | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/garden/">Mike's garden</a>.</p>
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">Mike's blog</a>.</p>
 {% endif %}
 
 {# List every content page in the project #}

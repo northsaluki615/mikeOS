@@ -23,4 +23,4 @@ tags:
 
 ## Help 
 
-Reach out to those you [love](https://mike.helmers.me/garden/love/).
+Reach out to those you [love](https://mike.helmers.me/blog/love/).

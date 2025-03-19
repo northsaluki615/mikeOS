@@ -42,7 +42,7 @@ This is a big year for James! My little guy started Kindergarten. It's crazy tha
 Back in the fall of 2022, I applied, and got into the University of Wisconsin - Green Bay to pursue a Masters Degree in Cybersecurity. This past December, I did it. This was tough. It took up a ton of time, and I considered dropping it multiple times as life presented obstacles to me. I'm really pleased to have finished it, and that's all there is there.
 ## Tim
 
-We lost Tim this last year. I've written about it [here](https://mike.helmers.me/garden/my-brother-tim/). I still miss him, and think of him often. Please visit https://tim.helmers.me for his permanent remembrance page.
+We lost Tim this last year. I've written about it [here](https://mike.helmers.me/blog/my-brother-tim/). I still miss him, and think of him often. Please visit https://tim.helmers.me for his permanent remembrance page.
 ## Marriage and Divorce
 
 Here's the big one. My divorce.  

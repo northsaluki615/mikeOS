@@ -8,7 +8,7 @@ tags:
   - seedling
 ---
 # the indie-web
-The Indieweb is like the old internet. Untethered. Disparate. Fun. It's about being in control of my presence. It's about not letting big tech control how you post, who you follow, and what you're allowed to share. It's about community gardens, not walled gardens.
+The Indieweb is like the old internet. Untethered. Disparate. Fun. It's about being in control of my presence. It's about not letting big tech control how you post, who you follow, and what you're allowed to share. It's about community blogs, not walled blogs.
 
 - https://indieweb.org/Getting_Started
 - https://indiewebify.me/
