@@ -59,14 +59,13 @@
         </a>
         and was built with 
         <a href="https://www.11ty.dev/">Eleventy</a>
-        on <time datetime="2024-12-17T16:42:30.993Z">2024-12-17</time>.
+        on <time datetime="{{ now | date('YYYY-MM-DDTHH:mm:ss.SSSZ') }}">{{ now | date('YYYY-MM-DD') }}</time>.
     </p>
 
     <script>
-        var counterEl = document.querySelector("#visitor-counter");
-        var t = setInterval(function () {
+        document.addEventListener("DOMContentLoaded", function () {
+            var counterEl = document.querySelector("#visitor-counter");
             if (window.goatcounter && window.goatcounter.visit_count) {
-                clearInterval(t);
                 try {
                     window.goatcounter.visit_count({
                         append: "#visitor-counter",
@@ -81,12 +80,11 @@
                         `,
                     });
                 } catch (err) {
-                    counterEl.innerHTML = 
-                        '<span class="fallback-message">No views yet</span>';
+                    counterEl.innerHTML = '<span class="fallback-message">No views yet</span>';
                     console.error("Error loading GoatCounter stats:", err);
                 }
             }
-        }, 100);
+        });
     </script>
     <script
         data-goatcounter="https://mikesgoat.goatcounter.com/count"

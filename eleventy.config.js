@@ -22,12 +22,15 @@ export default async function(eleventyConfig) {
 	const activityPubPlugin = await import("eleventy-plugin-activity-pub");
 	const embeds = await import("eleventy-plugin-embed-everything");
   
+	// Define constants for repeated values
+	const PREDEFINED_TAGS = new Set(["all", "nav", "post", "posts"]);
+	const DEFAULT_DATE_FORMAT = "MMMM dd, yyyy";
+  
 	// Passthrough copy
 	eleventyConfig.addPassthroughCopy({
 	  "./public/**/*": "/",
 	  "./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
-	eleventyConfig.addPassthroughCopy({"./public/**/*": "/"});
 	eleventyConfig.addPassthroughCopy("./src/images/*.svg");
   
 	// Watch target
@@ -54,48 +57,37 @@ export default async function(eleventyConfig) {
 	});
 
 	// Formats a JavaScript date object into an ISO string
-	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-	});
+	eleventyConfig.addFilter("htmlDateString", (dateObj) => 
+		DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd")
+	);
 
 	// Returns the first n items of an array
-	eleventyConfig.addFilter("head", (array, n) => {
-		if (!Array.isArray(array) || array.length === 0) return [];
-		if (n < 0) return array.slice(n);
-		return array.slice(0, n);
-	});
+	eleventyConfig.addFilter("head", (array = [], n) => n < 0 ? array.slice(n) : array.slice(0, n));
 
 	// Finds the smallest number in a list
-	eleventyConfig.addFilter("min", (...numbers) => {
-		return Math.min.apply(null, numbers);
-	});
+	eleventyConfig.addFilter("min", (...numbers) => Math.min(...numbers));
 
 	// Extracts unique tags from all items in a collection
 	eleventyConfig.addFilter("getAllTags", (collection) => {
-		let tagSet = new Set();
-		for (let item of collection) {
-		tagSet = new Set([...tagSet, ...(item.data.tags || [])]);
-		}
-		return Array.from(tagSet);
+		const tagSet = new Set();
+		collection.forEach((item) => (item.data?.tags ?? []).forEach((tag) => tagSet.add(tag)));
+		return [...tagSet];
 	});
 
 	// Filters out predefined tags from a list
-	eleventyConfig.addFilter("filterTagList", (tags) => {
-		return (tags || []).filter((tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
-	});
+	eleventyConfig.addFilter("filterTagList", (tags = []) => 
+		tags.filter((tag) => !PREDEFINED_TAGS.has(tag))
+	);
 
 	// Filters a collection by a specific tag
-	eleventyConfig.addFilter("filterByTag", (collection, tag) => {
-		return collection.filter((item) => {
-		return (item.data.tags || []).includes(tag);
-		});
-	});
+	eleventyConfig.addFilter("filterByTag", (collection, tag) => 
+		collection.filter((item) => (item.data?.tags ?? []).includes(tag))
+	);
 
-	// Formats a date using toLocaleDateString
-	eleventyConfig.addFilter("date", (date, format) => {
-		const options = { year: "numeric", month: "long", day: "numeric" };
-		return new Date(date).toLocaleDateString("en-US", options);
-	});
+	// Formats a date using Luxon
+	eleventyConfig.addFilter("date", (date, format = DEFAULT_DATE_FORMAT) => 
+		DateTime.fromJSDate(new Date(date)).toFormat(format)
+	);
 
 								
   
@@ -142,4 +134,3 @@ export default async function(eleventyConfig) {
 	  pathPrefix: "/"
 	};
   }
-  
