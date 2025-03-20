@@ -14,4 +14,3 @@ draft: "true"
 A really neat site.
 
 [omg.lol: an oasis on the internet](https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/)
-

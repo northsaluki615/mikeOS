@@ -627,4 +627,27 @@ img {
     text-decoration: underline;
     color: #0055aa;
   }
+  .centered-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse; /* To remove gaps between table cells */
+  }
+  
+  .centered-table td {
+    vertical-align: top;
+    width: 50%;
+    padding: 20px;
+    height: 100%; /* Ensures full height alignment */
+  }
+  
+  .centered-table h2 {
+    margin: 0 0 10px;
+    text-align: center; /* Centers the header text */
+  }
+  
+  .centered-table p {
+    margin: 5px 0;
+    text-align: center; /* Centers the paragraph text */
+  }
   

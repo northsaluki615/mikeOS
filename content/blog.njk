@@ -1,0 +1,49 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: 📰 blog
+  order: 2
+numberOfLatestPostsToShow: 3
+---
+
+<h1>📰 Mike's Blog Posts 📰</h1>
+<p>Welcome to my blog! Here you'll find more formal articles that I've written. They're usually longer and more thought-out.</p>
+
+{% set tagEmojis = {
+  "technology": "👨‍💻",
+  "note": "📝",
+  "blog": "📰",
+  "philosophy": "📚",
+  "productivity": "⏳",
+  "indieweb": "🌐",
+  "gaming": "🎮",
+  "infosec": "🔒",
+  "life": "🧬",
+  "self-hosted": "🖥️",
+  "recipe": "🍽️",
+  "rss": "📰",
+  "relationships": "👫",
+  "love": "❤️",
+  "privacy": "🕵️",
+  "tools": "🛠️"
+} %}
+
+<div class="grid-container">
+  {% for tag in collections.topTags %}
+    <div class="tag-box">
+      <h2>{{ tagEmojis[tag[0]] | default('🏷️') }} {{ tag[0] | capitalize }}</h2>
+      <ul>
+        {% for page in collections.all %}
+          {% if page.data.tags and tag[0] in page.data.tags %}
+            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>All Plantings</h2>
+{% set postslist = collections.blog %}
+
+{% include "postslist.njk" %}

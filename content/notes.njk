@@ -1,0 +1,14 @@
+---
+layout: layouts/blog-layout.njk
+eleventyNavigation:
+  key: 📝 notes
+  order: 3
+numberOfLatestPostsToShow: 3
+---
+
+<h1>📝 Mike's Notes 📝</h1>
+<p>Here's my notes. Shorter less well thought out thoughts.</p>
+
+{% set postslist = collections.notes %}
+
+{% include "postslist.njk" %}

@@ -4,7 +4,6 @@ description: This is the first post on my new 11ty site.
 date: 2024-05-13
 tags:
   - evergreen
-  - notes
 updated: 2024-08-05
 ---
 # Welcome to 11ty
