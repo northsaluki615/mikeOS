@@ -33,33 +33,38 @@ numberOfLatestPostsToShow: 3
 #}
 
 <table class="centered-table" style="width: 100%; margin-top: 20px;">
-  <tr>
-    <td>
-      <h2>📰 Blog Posts</h2>
-      {% set postsCount = collections.blog | length %}
-      {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-      {% set postslist = collections.blog | head(-1 * numberOfLatestPostsToShow) %}
-      {% set postslistCounter = postsCount %}
-      {% include "postslist.njk" %}
+  <thead>
+    <tr>
+      <th>📰 Blog Posts</th>
+      <th>📝 Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        {% set postsCount = collections.blog | length %}
+        {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+        {% set postslist = collections.blog | head(-1 * numberOfLatestPostsToShow) %}
+        {% set postslistCounter = postsCount %}
+        {% include "postslist.njk" %}
 
-      {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-      {% if morePosts > 0 %}
-        <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">Mike's blog</a>.</p>
-      {% endif %}
-    </td>
+        {% set morePosts = postsCount - numberOfLatestPostsToShow %}
+        {% if morePosts > 0 %}
+          <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">Mike's blog</a>.</p>
+        {% endif %}
+      </td>
+      <td>
+        {% set postsCount = collections.notes | length %}
+        {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+        {% set postslist = collections.notes | head(-1 * numberOfLatestPostsToShow) %}
+        {% set postslistCounter = postsCount %}
+        {% include "postslist.njk" %}
 
-    <td>
-      <h2>📝 Notes</h2>
-      {% set postsCount = collections.notes | length %}
-      {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-      {% set postslist = collections.notes | head(-1 * numberOfLatestPostsToShow) %}
-      {% set postslistCounter = postsCount %}
-      {% include "postslist.njk" %}
-
-      {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-      {% if morePosts > 0 %}
-        <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/notes/">Mike's Notes</a>.</p>
-      {% endif %}
-    </td>
-  </tr>
+        {% set morePosts = postsCount - numberOfLatestPostsToShow %}
+        {% if morePosts > 0 %}
+          <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/notes/">Mike's Notes</a>.</p>
+        {% endif %}
+      </td>
+    </tr>
+  </tbody>
 </table>

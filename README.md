@@ -1,4 +1,4 @@
-# mikeOS
+# Still Compiling
 
 This is a story about my life. I am developing an operating system from scratch, and I am documenting the process here. The base of this site is built on the [Eleventy Starter blog](https://github.com/11ty/eleventy-base-blog).
 

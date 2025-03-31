@@ -7,7 +7,7 @@ eleventyNavigation:
 ## Build Tools
 
 - [Eleventy](https://www.11ty.dev/) - Static site generator
-- [github](httos://github.com/northsaluki615/mikeos) - for version control
+- [github](httos://github.com/northsaluki615/Still Compiling) - for version control
 - [DigitalOcean](https://www.digitalocean.com/) - for hosting
 - [EchoFeed](https://echofeed.app/) - for publishing to Webmention.io and Mastodon
 - [GoatCounter](https://www.goatcounter.com/) - for analytics

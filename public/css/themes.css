@@ -1,11 +1,11 @@
 /* Rosé Pine theme */
 [data-theme="rosepine-light"] {
     --background-color: #efebeb;
-    --text-color: #524e4e;
-    --link-color: #bb5b5b;
-    --link-hover-color: #bb5b5b;
+    --text-color: #3a3a3a;
+    --link-color: #8b2f2f;
+    --link-hover-color: #a04545;
   
-    --heading-color: #524e4e;
+    --heading-color: #2f2f2f;
   
     --table-background-color: #ffffff;
     --table-header-background-color: #e1d8d8;
@@ -13,11 +13,11 @@
     --table-border-color: #d9c6c6;
   
     --button-background-color: #e1d8d8;
-    --button-text-color: #524e4e;
+    --button-text-color: #2f2f2f;
     --button-hover-background-color: #d9c6c6;
   
     --input-background-color: #ffffff;
-    --input-text-color: #524e4e;
+    --input-text-color: #2f2f2f;
     --input-border-color: #e1d8d8;
     --input-focus-border-color: #524e4e;
   
@@ -48,8 +48,9 @@
 [data-theme="frappe"] {
     --background-color: #303446;
     --text-color: #c6d0f5;
+    --text-color-link-visited: #b6bfe0; /* Slight variation from normal link */
     --link-color: #eebebe;
-    --link-hover-color: #f4b8e4;
+    --link-hover-color: #f2a8d6;
   
     --heading-color: #c6d0f5;
   
@@ -58,7 +59,7 @@
     --table-header-text-color: #c6d0f5;
     --table-border-color: #434c5e;
   
-    --button-background-color: #4c566a;
+    --button-background-color: #5c677a;
     --button-text-color: #c6d0f5;
     --button-hover-background-color: #434c5e;
   
@@ -94,21 +95,22 @@
 [data-theme="kementari"] {
     --background-color: #1f2421; /* shark */
     --text-color: #dce1de; /* alto */
+    --text-color-link-visited: #6ec6a8; /* Add this if not defined */
     --link-color: #49a078; /* aqua forest */
     --link-hover-color: #216869; /* mosque */
   
     --heading-color: #9cc5a1; /* spring rain */
   
-    --table-background-color: #1f2421; /* shark */
-    --table-header-background-color: #216869; /* mosque */
+    --table-background-color: #26302d; /* shark */
+    --table-header-background-color: #2b7a78; /* mosque */
     --table-header-text-color: #dce1de; /* alto */
     --table-border-color: #49a078; /* aqua forest */
   
     --button-background-color: #216869; /* mosque */
     --button-text-color: #dce1de; /* alto */
-    --button-hover-background-color: #49a078; /* aqua forest */
+    --button-hover-background-color: #4ab199; /* aqua forest */
   
-    --input-background-color: #1f2421; /* shark */
+    --input-background-color: #26302d; /* shark */
     --input-text-color: #dce1de; /* alto */
     --input-border-color: #49a078; /* aqua forest */
     --input-focus-border-color: #9cc5a1; /* spring rain */
@@ -153,23 +155,28 @@
   --cement: #997b66;
 
   --background-color: var(--peach-yellow);
-  --text-color: #1e1e2e; /* Dark text color for readability */
-  --link-color: var(--calico);
-  --link-hover-color: var(--antique-brass);
+  --text-color: #2a2a2a; /* Dark text color for readability */
+  --text-color-link-visited: #99704a;
+  --link-color: #b57936;
+  --link-hover-color: #a85c26;
 
   --heading-color: var(--cement);
 
-  --table-background-color: var(--gurkha);
-  --table-header-background-color: var(--tacao);
-  --table-header-text-color: var(--cameo);
-  --table-border-color: var(--cement);
+  --table-background-color: #fff5e0;         /* much lighter for better contrast */
+  --table-header-background-color: #d08c60;  /* deeper color for distinction */
+  --table-header-text-color: #1e1e2e;        /* dark text on warm background */
+  --table-border-color: #997b66;             /* mid-tone, still visible */
+
+  /* Optional: Add row striping for legibility */
+  --table-row-even-background: #f1dca7;
+  --table-row-odd-background: #fff5e0;
 
   --button-background-color: var(--calico);
-  --button-text-color: var(--cameo);
+  --button-text-color: #4d3c2f;
   --button-hover-background-color: var(--antique-brass);
 
   --input-background-color: var(--peach-yellow);
-  --input-text-color: var(--calico);
+  --input-text-color: #4d3c2f;
   --input-border-color: var(--gurkha);
   --input-focus-border-color: var(--cameo);
 
@@ -195,6 +202,18 @@
   color: var(--heading-color);
   font-weight: bold;
 }
+
+.theme-pine-forest table tr:nth-child(even) {
+  background-color: var(--table-row-even-background);
+}
+
+.theme-pine-forest table tr:nth-child(odd) {
+  background-color: var(--table-row-odd-background);
+}
+
+
+/* Temporary message styling */
+
 .temporary-message {
   background-color: var(--link-color); /* Use link color for prominence */
   color: var(--background-color); /* Contrast text with the background */
