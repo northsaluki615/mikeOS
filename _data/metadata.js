@@ -1,5 +1,5 @@
 export default {
-	title: "Still Compiling",
+	title: "mikeOS",
 	url: "https://mike.helmers.me/",
 	language: "en",
 	description: "My weird corner of the internet",
