@@ -6,4 +6,4 @@ layout: layouts/base.njk
 
 She's the goodest girl.
 
-    {% image "./wendy-sleeping-dog.jpg", "Wendy Helmers" %}
+    <img src="./wendy-sleeping-dog.jpg", "Wendy Helmers>

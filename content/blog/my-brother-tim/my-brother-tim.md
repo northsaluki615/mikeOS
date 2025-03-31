@@ -39,11 +39,11 @@ Going off stories, my family held a remembrance festival for Tim. Several former
 
 Tim spent some more Coast Guard time in Seattle, and was eventually sent to New Orleans to assist with the BP Oil-spill clean up efforts. Tim had a job running and Arms Room. He once told me that his most exciting day was when some idiot fired a single round into the ocean, and he had to complete a ton of paperwork explaining what happened.
 
-{% image "./tim-dad-shooting.jpg", "Tim and Pat shooting some guns" %}
+<img src="./tim-dad-shooting.jpg", "Tim and Pat shooting some guns>
 
 Once out of the Coast Guard, Tim attended Trinidad State College, where he earned an Associates Degree in Gunsmithing. My parents and I were able to go out and watch him graduate. Tim even took us to a shooting range where we had the opportunity to shoot some of the guns he built.
 
-{% image "./tim-mom-associate-grad.jpg", "Tim and Mom" %}
+<img src="./tim-mom-associate-grad.jpg", "Tim and Mom>
 
 After puttering around out west for a bit, Tim eventually made his way back to Illinois, attending George Williams College of Aurora University graduating a Bachelor's Degree in Parks and Recreation. Armed with this degree, Tim became a District Executive with the Boy Scouts of America, out in rural Idaho. Like many others, Tim lost this position during the 2020 Covid-19 Pandemic, bring him to Portland, OR.
 
@@ -64,4 +64,4 @@ Because this how I process things, I've built a little memorial site for him. I 
 
 Thank you Tim. I love you. I miss you. I will always be proud to have you as my brother.
 
-{% image "./mike-and-tim-2017.jpg", "Me and my brother" %}
+<img src="./mike-and-tim-2017.jpg", "Me and my brother>

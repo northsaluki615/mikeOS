@@ -27,7 +27,7 @@ Here's my listing of my "Best of 2024" for movies and TV shows. All can be viewe
 
 [My year in Steam](https://s.team/y24/gffcqjn?l=english)
 
-{% image "./steam-2024-12-19.png", "2024 Year of Steam" %}
+<img src="./steam-2024-12-19.png", "2024 Year of Steam>
 
 I want to give a special shoutout to Helldivers 2. What a game. I'm what's called a "Daddiver". I have a kid, work, and friends. I only have so much time to game, and this masterpiece lets me pop on for 30 minutes, spread some freedom, and get back to what I was doing. Helldivers provided a lot of good distractions this year. So, if you want to play, let me know. Let's spread some managed democracy, and free the galaxy from tyranny.
 
@@ -59,15 +59,15 @@ And in the end, the only way to win is to not play the game.
 
 <div class="books-row">
   <div class="book">
-    {% image "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481562381i/28335696.jpg", "Cover of Persepolis Rising", [150] %}
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481562381i/28335696.jpg", "Cover of Persepolis Rising", [150] %}
     <p><a href="https://www.goodreads.com/book/show/28335696-persepolis-rising" class="book-link">Persepolis Rising</a></p>
   </div>
   <div class="book">
-    {% image "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522779721i/28335698.jpg", "Cover of Tiamat's Wrath", [150] %}
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522779721i/28335698.jpg", "Cover of Tiamat's Wrath", [150] %}
     <p><a href="https://www.goodreads.com/book/show/28335698-tiamat-s-wrath" class="book-link">Tiamat's Wrath</a></p>
   </div>
   <div class="book">
-    {% image "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600283641i/28335699.jpg", "Cover of Leviathan Falls", [150] %}
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600283641i/28335699.jpg", "Cover of Leviathan Falls", [150] %}
     <p><a href="https://www.goodreads.com/book/show/28335699-leviathan-falls" class="book-link">Leviathan Falls</a></p>
   </div>
 </div>

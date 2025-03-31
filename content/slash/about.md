@@ -8,7 +8,7 @@ eleventyNavigation:
 
 ## Mike Helmers
 
-{% image "./mike-helmers-profile.jpg", "Mike, in a favorite shirt." %}
+<img src="./mike-helmers-profile.jpg", "Mike, in a favorite shirt.>
 
 Hey, I'm Mike! I live in Madison, WI, with my son, my partner, and our dog. This site is my little corner of the web, where I write about what I’m learning, what I’m thinking, and whatever I feel like sharing. I'm really into the [IndieWeb](https://indieweb.org/), and I’m always tinkering with ways to make this site more connected and interactive.
 

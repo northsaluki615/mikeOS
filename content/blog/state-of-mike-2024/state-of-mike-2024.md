@@ -9,7 +9,7 @@ tags:
   - evergreen
 ---
 
-{% image "./itysl-lafft.png", "Life's a funny thing." %}
+<img src="./itysl-lafft.png", "Life's a funny thing.>
 
 What a year. Frankly, this has been one of the more tumultuous years in my life. Throughout, I saw significant changes in my personal relationships, my career, my education, my living situation, and more. Some good, some bad, all complicated. And I'm not even getting into the fucked up political state of the US.
 
